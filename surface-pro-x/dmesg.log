@@ -1,0 +1,1244 @@
+[    0.000000] Booting Linux on physical CPU 0x0000000000 [0x51df805e]
+[    0.000000] Linux version 5.19.0-1-surface-dev (luzmn@xws) (aarch64-linux-gnu-gcc (GCC) 12.1.0, GNU ld (GNU Binutils) 2.38) #14 SMP PREEMPT Sun Jun 26 15:52:36 CEST 2022
+[    0.000000] Machine model: Microsoft Surface Pro X (SQ2)
+[    0.000000] efi: EFI v2.70 by Qualcomm Technologies, Inc.
+[    0.000000] efi: ACPI 2.0=0xffffe000 TPMFinalLog=0xfff63000 MEMATTR=0xfadb8018 ESRT=0xfb129b98 SMBIOS=0xffb5e000 TPMEventLog=0xf2a15018 RNG=0xfeb2bd98 MEMRESERVE=0xf8198798
+[    0.000000] efi: seeding entropy pool
+[    0.000000] esrt: Reserving ESRT space from 0x00000000fb129b98 to 0x00000000fb129c98.
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000080000000-0x00000000ffffffff]
+[    0.000000]   DMA32    empty
+[    0.000000]   Normal   [mem 0x0000000100000000-0x0000000df75fffff]
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000080000000-0x00000000805fffff]
+[    0.000000]   node   0: [mem 0x0000000080600000-0x00000000829fffff]
+[    0.000000]   node   0: [mem 0x0000000083722000-0x00000000854fffff]
+[    0.000000]   node   0: [mem 0x0000000085500000-0x00000000856fffff]
+[    0.000000]   node   0: [mem 0x0000000085d00000-0x0000000085efffff]
+[    0.000000]   node   0: [mem 0x0000000085f20000-0x0000000085f4ffff]
+[    0.000000]   node   0: [mem 0x0000000085f50000-0x0000000085ffffff]
+[    0.000000]   node   0: [mem 0x0000000086000000-0x00000000861fffff]
+[    0.000000]   node   0: [mem 0x000000008b700000-0x000000009aafffff]
+[    0.000000]   node   0: [mem 0x000000009ab00000-0x000000009dff7fff]
+[    0.000000]   node   0: [mem 0x000000009dff8000-0x000000009dffffff]
+[    0.000000]   node   0: [mem 0x000000009e000000-0x000000009e3fffff]
+[    0.000000]   node   0: [mem 0x000000009e400000-0x000000009f7fffff]
+[    0.000000]   node   0: [mem 0x000000009f800000-0x000000009ff8ffff]
+[    0.000000]   node   0: [mem 0x000000009ff90000-0x000000009ff91fff]
+[    0.000000]   node   0: [mem 0x000000009ffb0000-0x000000009ffcffff]
+[    0.000000]   node   0: [mem 0x000000009ffd0000-0x000000009fffffff]
+[    0.000000]   node   0: [mem 0x00000000a0000000-0x00000000fea51fff]
+[    0.000000]   node   0: [mem 0x00000000fea52000-0x00000000fff6afff]
+[    0.000000]   node   0: [mem 0x00000000fff6b000-0x000000027fffffff]
+[    0.000000]   node   0: [mem 0x0000000c00000000-0x0000000df75fffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000080000000-0x0000000df75fffff]
+[    0.000000] On node 0, zone DMA: 3362 pages in unavailable ranges
+[    0.000000] On node 0, zone DMA: 1536 pages in unavailable ranges
+[    0.000000] On node 0, zone DMA: 32 pages in unavailable ranges
+[    0.000000] On node 0, zone DMA: 21760 pages in unavailable ranges
+[    0.000000] On node 0, zone DMA: 30 pages in unavailable ranges
+[    0.000000] On node 0, zone Normal: 2560 pages in unavailable ranges
+[    0.000000] cma: Reserved 64 MiB at 0x00000000ec000000
+[    0.000000] psci: probing for conduit method from DT.
+[    0.000000] psci: PSCIv1.1 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: MIGRATE_INFO_TYPE not supported.
+[    0.000000] psci: SMC Calling Convention v1.1
+[    0.000000] psci: OSI mode supported.
+[    0.000000] percpu: Embedded 21 pages/cpu s45480 r8192 d32344 u86016
+[    0.000000] pcpu-alloc: s45480 r8192 d32344 u86016 alloc=21*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 [0] 4 [0] 5 [0] 6 [0] 7
+[    0.000000] Detected VIPT I-cache on CPU0
+[    0.000000] CPU features: detected: GIC system register CPU interface
+[    0.000000] CPU features: detected: ARM errata 1165522, 1319367, or 1530923
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 4067272
+[    0.000000] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-linux-surface-dev root=UUID=22255f47-d230-42ac-941e-3c85d61171bf rw clk_ignore_unused efi=novamap
+[    0.000000] Unknown kernel command line parameters "BOOT_IMAGE=/boot/vmlinuz-linux-surface-dev", will be passed to user space.
+[    0.000000] Dentry cache hash table entries: 2097152 (order: 12, 16777216 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 1048576 (order: 11, 8388608 bytes, linear)
+[    0.000000] mem auto-init: stack:off, heap alloc:off, heap free:off
+[    0.000000] software IO TLB: mapped [mem 0x00000000e8000000-0x00000000ec000000] (64MB)
+[    0.000000] Memory: 15696176K/16529024K available (18880K kernel code, 4198K rwdata, 9744K rodata, 6656K init, 946K bss, 767312K reserved, 65536K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=8, Nodes=1
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=64 to nr_cpu_ids=8.
+[    0.000000] 	Trampoline variant of Tasks RCU enabled.
+[    0.000000] 	Tracing variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=8
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] GICv3: 928 SPIs implemented
+[    0.000000] GICv3: 0 Extended SPIs implemented
+[    0.000000] Root IRQ handler: gic_handle_irq
+[    0.000000] GICv3: GICv3 features: 16 PPIs
+[    0.000000] GICv3: CPU0: found redistributor 0 region 0:0x0000000017a60000
+[    0.000000] ITS: No ITS available, not enabling LPIs
+[    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000000] arch_timer: cp15 and mmio timer(s) running at 19.20MHz (virt/virt).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x46d987e47, max_idle_ns: 440795202767 ns
+[    0.000000] sched_clock: 56 bits at 19MHz, resolution 52ns, wraps every 4398046511078ns
+[    0.000153] Console: colour dummy device 80x25
+[    0.000548] printk: console [tty0] enabled
+[    0.000578] Calibrating delay loop (skipped), value calculated using timer frequency.. 38.40 BogoMIPS (lpj=19200)
+[    0.000595] pid_max: default: 32768 minimum: 301
+[    0.000703] LSM: Security Framework initializing
+[    0.000721] Yama: becoming mindful.
+[    0.000813] Mount-cache hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    0.000846] Mountpoint-cache hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    0.002336] cblist_init_generic: Setting adjustable number of callback queues.
+[    0.002354] cblist_init_generic: Setting shift to 3 and lim to 1.
+[    0.002437] cblist_init_generic: Setting shift to 3 and lim to 1.
+[    0.002658] rcu: Hierarchical SRCU implementation.
+[    0.002702] printk: console [tty0] printing thread started
+[    0.005726] Remapping and enabling EFI services.
+[    0.006264] smp: Bringing up secondary CPUs ...
+[    0.007362] Detected VIPT I-cache on CPU1
+[    0.007393] GICv3: CPU1: found redistributor 100 region 0:0x0000000017a80000
+[    0.007428] CPU1: Booted secondary processor 0x0000000100 [0x51df805e]
+[    0.008542] Detected VIPT I-cache on CPU2
+[    0.008565] GICv3: CPU2: found redistributor 200 region 0:0x0000000017aa0000
+[    0.008599] CPU2: Booted secondary processor 0x0000000200 [0x51df805e]
+[    0.009754] Detected VIPT I-cache on CPU3
+[    0.009776] GICv3: CPU3: found redistributor 300 region 0:0x0000000017ac0000
+[    0.009807] CPU3: Booted secondary processor 0x0000000300 [0x51df805e]
+[    0.011928] CPU features: detected: Spectre-v2
+[    0.011946] CPU features: detected: Spectre-v4
+[    0.011964] CPU features: detected: Kernel page table isolation (KPTI)
+[    0.011971] CPU features: detected: ARM erratum 1418040
+[    0.011977] CPU features: detected: Qualcomm erratum 1009, or ARM erratum 1286807
+[    0.011980] Detected PIPT I-cache on CPU4
+[    0.012013] GICv3: CPU4: found redistributor 400 region 0:0x0000000017ae0000
+[    0.012032] arch_timer: Enabling local workaround for ARM erratum 1418040
+[    0.012053] CPU4: Booted secondary processor 0x0000000400 [0x51df804e]
+[    0.013527] Detected PIPT I-cache on CPU5
+[    0.013563] GICv3: CPU5: found redistributor 500 region 0:0x0000000017b00000
+[    0.013583] arch_timer: Enabling local workaround for ARM erratum 1418040
+[    0.013604] CPU5: Booted secondary processor 0x0000000500 [0x51df804e]
+[    0.015174] Detected PIPT I-cache on CPU6
+[    0.015209] GICv3: CPU6: found redistributor 600 region 0:0x0000000017b20000
+[    0.015227] arch_timer: Enabling local workaround for ARM erratum 1418040
+[    0.015250] CPU6: Booted secondary processor 0x0000000600 [0x51df804e]
+[    0.016917] Detected PIPT I-cache on CPU7
+[    0.016958] GICv3: CPU7: found redistributor 700 region 0:0x0000000017b40000
+[    0.016977] arch_timer: Enabling local workaround for ARM erratum 1418040
+[    0.016999] CPU7: Booted secondary processor 0x0000000700 [0x51df804e]
+[    0.017095] smp: Brought up 1 node, 8 CPUs
+[    0.017100] SMP: Total of 8 processors activated.
+[    0.017102] CPU features: detected: 32-bit EL0 Support
+[    0.017105] CPU features: detected: Data cache clean to the PoU not required for I/D coherence
+[    0.017107] CPU features: detected: Common not Private translations
+[    0.017109] CPU features: detected: CRC32 instructions
+[    0.017112] CPU features: detected: RCpc load-acquire (LDAPR)
+[    0.017114] CPU features: detected: LSE atomic instructions
+[    0.017116] CPU features: detected: Privileged Access Never
+[    0.017118] CPU features: detected: RAS Extension Support
+[    2.650686] CPU: All CPU(s) started at EL1
+[    2.650736] alternatives: patching kernel code
+[    2.653259] devtmpfs: initialized
+[    2.663941] Registered cp15_barrier emulation handler
+[    2.663954] Registered setend emulation handler
+[    2.664091] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+[    2.664103] futex hash table entries: 2048 (order: 5, 131072 bytes, linear)
+[    2.665030] pinctrl core: initialized pinctrl subsystem
+[    2.665687] SMBIOS 3.3 present.
+[    2.665700] DMI: Microsoft Corporation Surface Pro X/Surface Pro X, BIOS 7.590.140 01/07/2022
+[    2.666195] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    2.666885] DMA: preallocated 2048 KiB GFP_KERNEL pool for atomic allocations
+[    2.667089] DMA: preallocated 2048 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[    2.667269] DMA: preallocated 2048 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    2.668432] thermal_sys: Registered thermal governor 'fair_share'
+[    2.668436] thermal_sys: Registered thermal governor 'bang_bang'
+[    2.668438] thermal_sys: Registered thermal governor 'step_wise'
+[    2.668440] thermal_sys: Registered thermal governor 'user_space'
+[    2.668442] thermal_sys: Registered thermal governor 'power_allocator'
+[    2.671153] cpuidle: using governor ladder
+[    2.671169] cpuidle: using governor menu
+[    2.671251] NET: Registered PF_QIPCRTR protocol family
+[    2.671365] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    2.671524] ASID allocator initialised with 32768 entries
+[    2.671529] HugeTLB: can optimize 4095 vmemmap pages for hugepages-1048576kB
+[    2.671532] HugeTLB: can optimize 127 vmemmap pages for hugepages-32768kB
+[    2.671535] HugeTLB: can optimize 7 vmemmap pages for hugepages-2048kB
+[    2.671537] HugeTLB: can optimize 0 vmemmap pages for hugepages-64kB
+[    2.672867] Serial: AMBA PL011 UART driver
+[    2.694492] platform af00000.clock-controller: Fixing up cyclic dependency with aec2a00.phy
+[    2.718610] HugeTLB registered 1.00 GiB page size, pre-allocated 0 pages
+[    2.718619] HugeTLB registered 32.0 MiB page size, pre-allocated 0 pages
+[    2.718623] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+[    2.718626] HugeTLB registered 64.0 KiB page size, pre-allocated 0 pages
+[    2.718973] cryptd: max_cpu_qlen set to 1000
+[    2.736192] raid6: neonx8   gen()  2632 MB/s
+[    2.753265] raid6: neonx4   gen()  2513 MB/s
+[    2.770337] raid6: neonx2   gen()  2194 MB/s
+[    2.787411] raid6: neonx1   gen()  1844 MB/s
+[    2.804476] raid6: int64x8  gen()  1321 MB/s
+[    2.821551] raid6: int64x4  gen()  1400 MB/s
+[    2.838613] raid6: int64x2  gen()  1196 MB/s
+[    2.855689] raid6: int64x1  gen()   978 MB/s
+[    2.855691] raid6: using algorithm neonx8 gen() 2632 MB/s
+[    2.872755] raid6: .... xor() 1959 MB/s, rmw enabled
+[    2.872758] raid6: using neon recovery algorithm
+[    2.873300] ACPI: Interpreter disabled.
+[    2.877115] iommu: Default domain type: Translated
+[    2.877124] iommu: DMA domain TLB invalidation policy: strict mode
+[    2.877973] SCSI subsystem initialized
+[    2.878089] libata version 3.00 loaded.
+[    2.878232] usbcore: registered new interface driver usbfs
+[    2.878276] usbcore: registered new interface driver hub
+[    2.878299] usbcore: registered new device driver usb
+[    2.879044] pps_core: LinuxPPS API ver. 1 registered
+[    2.879047] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    2.879058] PTP clock support registered
+[    2.879202] EDAC MC: Ver: 3.0.0
+[    2.879696] CPUidle PSCI: Initialized CPU PM domain topology
+[    2.879967] qcom_scm: convention: smc arm 64
+[    2.880583] Registered efivars operations
+[    2.881206] FPGA manager framework
+[    2.881263] Advanced Linux Sound Architecture Driver Initialized.
+[    2.881700] NetLabel: Initializing
+[    2.881703] NetLabel:  domain hash size = 128
+[    2.881706] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    2.881743] NetLabel:  unlabeled traffic allowed by default
+[    2.881893] vgaarb: loaded
+[    2.882122] clocksource: Switched to clocksource arch_sys_counter
+[    2.882360] VFS: Disk quotas dquot_6.6.0
+[    2.882407] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    2.882615] pnp: PnP ACPI: disabled
+[    2.888658] NET: Registered PF_INET protocol family
+[    2.889000] IP idents hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[    2.899959] tcp_listen_portaddr_hash hash table entries: 8192 (order: 5, 131072 bytes, linear)
+[    2.900036] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    2.900050] TCP established hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    2.900807] TCP bind hash table entries: 65536 (order: 8, 1048576 bytes, linear)
+[    2.901290] TCP: Hash tables configured (established 131072 bind 65536)
+[    2.901491] MPTCP token hash table entries: 16384 (order: 6, 393216 bytes, linear)
+[    2.901640] UDP hash table entries: 8192 (order: 6, 262144 bytes, linear)
+[    2.901774] UDP-Lite hash table entries: 8192 (order: 6, 262144 bytes, linear)
+[    2.902034] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    2.902443] RPC: Registered named UNIX socket transport module.
+[    2.902449] RPC: Registered udp transport module.
+[    2.902452] RPC: Registered tcp transport module.
+[    2.902454] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    2.902461] PCI: CLS 0 bytes, default 64
+[    2.902701] Trying to unpack rootfs image as initramfs...
+[    2.912316] hw perfevents: enabled with armv8_pmuv3 PMU driver, 7 counters available
+[    2.912819] kvm [1]: HYP mode not available
+[    2.914235] Initialise system trusted keyrings
+[    2.914402] workingset: timestamp_bits=46 max_order=22 bucket_order=0
+[    2.919791] zbud: loaded
+[    2.922232] NFS: Registering the id_resolver key type
+[    2.922277] Key type id_resolver registered
+[    2.922280] Key type id_legacy registered
+[    2.922363] nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+[    2.922373] nfs4flexfilelayout_init: NFSv4 Flexfile Layout Driver Registering...
+[    2.922398] ntfs3: Max link count 4000
+[    2.922402] ntfs3: Read-only LZX/Xpress compression included
+[    2.922572] SGI XFS with ACLs, security attributes, quota, no debug enabled
+[    2.978742] NET: Registered PF_ALG protocol family
+[    2.978751] xor: measuring software checksum speed
+[    2.982464]    8regs           :  2655 MB/sec
+[    2.986199]    32regs          :  2656 MB/sec
+[    2.989089]    arm64_neon      :  3426 MB/sec
+[    2.989094] xor: using function: arm64_neon (3426 MB/sec)
+[    2.989105] Key type asymmetric registered
+[    2.989118] Asymmetric key parser 'x509' registered
+[    2.989175] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 242)
+[    2.989308] io scheduler mq-deadline registered
+[    2.989316] io scheduler kyber registered
+[    2.989355] io scheduler bfq registered
+[    3.012087] IPMI message handler: version 39.2
+[    3.041591] smps6: Setting 1350000-1372000uV
+[    3.041929] smps7: Setting 960000-960000uV
+[    3.042254] ldo3: Setting 1200000-1200000uV
+[    3.042514] ldo10: Setting 3296000-3312000uV
+[    3.042716] ldo11: Setting 3296000-3304000uV
+[    3.042946] bob: Setting 3296000-3350000uV
+[    3.045867] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[    3.049196] msm_serial: driver initialized
+[    3.057644] arm-smmu 15000000.iommu: probing hardware configuration...
+[    3.057652] arm-smmu 15000000.iommu: SMMUv2 with:
+[    3.057693] arm-smmu 15000000.iommu: 	stage 1 translation
+[    3.057701] arm-smmu 15000000.iommu: 	non-coherent table walk
+[    3.057707] arm-smmu 15000000.iommu: 	(IDR0.CTTW overridden by FW configuration)
+[    3.057715] arm-smmu 15000000.iommu: 	stream matching with 79 register groups
+[    3.057771] arm-smmu 15000000.iommu: 	106 context banks (0 stage-2 only)
+[    3.059261] arm-smmu 15000000.iommu: 	Supported page sizes: 0x61311000
+[    3.059273] arm-smmu 15000000.iommu: 	Stage-1: 48-bit VA -> 48-bit IPA
+[    3.075244] spmi spmi-0: PMIC arbiter version v5 (0x50000000)
+[    3.081093] gpio gpiochip0: (c440000.spmi:pmic@0:gpio@c000): not an immutable chip, please consider fixing it!
+[    3.083288] gpio gpiochip1: (c440000.spmi:pmic@4:gpio@c000): not an immutable chip, please consider fixing it!
+[    3.086443] gpio gpiochip2: (c440000.spmi:pmic@8:gpio@c000): not an immutable chip, please consider fixing it!
+[    3.089308] usbcore: registered new interface driver r8152
+[    3.092184] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    3.092198] ehci-pci: EHCI PCI platform driver
+[    3.092227] ehci-platform: EHCI generic platform driver
+[    3.092459] ehci-orion: EHCI orion driver
+[    3.092623] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    3.092633] ohci-pci: OHCI PCI platform driver
+[    3.092675] ohci-platform: OHCI generic platform driver
+[    3.092866] uhci_hcd: USB Universal Host Controller Interface driver
+[    3.093725] SPI driver max3421-hcd has no spi_device_id for maxim,max3421
+[    3.093881] usbcore: registered new interface driver uas
+[    3.093915] usbcore: registered new interface driver usb-storage
+[    3.093947] usbcore: registered new interface driver ums-alauda
+[    3.093965] usbcore: registered new interface driver ums-cypress
+[    3.093982] usbcore: registered new interface driver ums-datafab
+[    3.094002] usbcore: registered new interface driver ums_eneub6250
+[    3.094018] usbcore: registered new interface driver ums-freecom
+[    3.094038] usbcore: registered new interface driver ums-isd200
+[    3.094058] usbcore: registered new interface driver ums-jumpshot
+[    3.094079] usbcore: registered new interface driver ums-karma
+[    3.094131] usbcore: registered new interface driver ums-onetouch
+[    3.094162] usbcore: registered new interface driver ums-realtek
+[    3.094180] usbcore: registered new interface driver ums-sddr09
+[    3.094201] usbcore: registered new interface driver ums-sddr55
+[    3.094218] usbcore: registered new interface driver ums-usbat
+[    3.094278] usbcore: registered new interface driver usbserial_generic
+[    3.094295] usbserial: USB Serial support registered for generic
+[    3.094315] usbcore: registered new interface driver ftdi_sio
+[    3.094330] usbserial: USB Serial support registered for FTDI USB Serial Device
+[    3.094353] usbcore: registered new interface driver usb_serial_simple
+[    3.094367] usbserial: USB Serial support registered for carelink
+[    3.094381] usbserial: USB Serial support registered for zio
+[    3.094408] usbserial: USB Serial support registered for funsoft
+[    3.094426] usbserial: USB Serial support registered for flashloader
+[    3.094441] usbserial: USB Serial support registered for google
+[    3.094465] usbserial: USB Serial support registered for libtransistor
+[    3.094476] usbserial: USB Serial support registered for vivopay
+[    3.094490] usbserial: USB Serial support registered for moto_modem
+[    3.094504] usbserial: USB Serial support registered for motorola_tetra
+[    3.094518] usbserial: USB Serial support registered for nokia
+[    3.094531] usbserial: USB Serial support registered for novatel_gps
+[    3.094543] usbserial: USB Serial support registered for hp4x
+[    3.094557] usbserial: USB Serial support registered for suunto
+[    3.094571] usbserial: USB Serial support registered for siemens_mpi
+[    3.096703] mousedev: PS/2 mouse device common for all mice
+[    3.103130] device-mapper: uevent: version 1.0.3
+[    3.103360] device-mapper: ioctl: 4.46.0-ioctl (2022-02-22) initialised: dm-devel@redhat.com
+[    3.106884] sdhci: Secure Digital Host Controller Interface driver
+[    3.106889] sdhci: Copyright(c) Pierre Ossman
+[    3.108031] Synopsys Designware Multimedia Card Interface Driver
+[    3.109723] sdhci-pltfm: SDHCI platform and OF driver helper
+[    3.113161] ledtrig-cpu: registered to indicate activity on CPUs
+[    3.114523] efifb: probing for efifb
+[    3.114594] efifb: framebuffer at 0x80600000, using 21600k, total 21600k
+[    3.114601] efifb: mode is 2880x1920x32, linelength=11520, pages=1
+[    3.114607] efifb: scrolling: redraw
+[    3.114609] efifb: Truecolor: size=8:8:8:8, shift=24:16:8:0
+[    3.137445] Console: switching to colour frame buffer device 360x120
+[    3.159747] fb0: EFI VGA frame buffer device
+[    3.160876] hid: raw HID events driver (C) Jiri Kosina
+[    3.160959] usbcore: registered new interface driver usbhid
+[    3.160963] usbhid: USB HID core driver
+[    3.191300] Initializing XFRM netlink socket
+[    3.191845] NET: Registered PF_INET6 protocol family
+[    3.365979] Freeing initrd memory: 6764K
+[    3.432374] Segment Routing with IPv6
+[    3.432418] In-situ OAM (IOAM) with IPv6
+[    3.432485] mip6: Mobile IPv6
+[    3.432489] NET: Registered PF_PACKET protocol family
+[    3.432781] Key type dns_resolver registered
+[    3.433779] registered taskstats version 1
+[    3.433792] Loading compiled-in X.509 certificates
+[    3.434817] zswap: loaded using pool lzo/zbud
+[    3.435257] debug_vm_pgtable: [debug_vm_pgtable         ]: Validating architecture page table helpers
+[    3.435550] Key type ._fscrypt registered
+[    3.435554] Key type .fscrypt registered
+[    3.435557] Key type fscrypt-provisioning registered
+[    3.436443] Btrfs loaded, crc32c=crc32c-generic, zoned=yes, fsverity=no
+[    3.437193] Key type encrypted registered
+[    4.306455] geni_se_qup 8c0000.geniqup: Adding to iommu group 0
+[    4.314549] geni_se_qup ac0000.geniqup: Adding to iommu group 1
+[    4.318722] geni_se_qup cc0000.geniqup: Adding to iommu group 2
+[    4.320486] c8c000.serial: ttyHS1 at MMIO 0xc8c000 (irq = 135, base_baud = 0) is a MSM
+[    4.321341] serial serial0: tty port ttyHS1 registered
+[    4.323167] c94000.serial: ttyHS0 at MMIO 0xc94000 (irq = 136, base_baud = 0) is a MSM
+[    4.323969] serial serial1: tty port ttyHS0 registered
+[    4.331918] smps5: Setting 2040000-2040000uV
+[    4.332163] ldo7: Setting 1800000-1800000uV
+[    4.332578] ldo9: Setting 1296000-1304000uV
+[    4.332899] ldo12: Setting 1800000-1800000uV
+[    4.333801] smps4: Setting 992000-992000uV
+[    4.334050] smps5: Setting 2040000-2040000uV
+[    4.334316] ldo1: Setting 752000-752000uV
+[    4.334660] ldo5: Setting 880000-880000uV
+[    4.334984] ldo9: Setting 880000-880000uV
+[    4.335319] ldo16: Setting 3072000-3072000uV
+[    4.336779] arm-smmu 2ca0000.iommu: probing hardware configuration...
+[    4.336784] arm-smmu 2ca0000.iommu: SMMUv2 with:
+[    4.336803] arm-smmu 2ca0000.iommu: 	stage 1 translation
+[    4.336806] arm-smmu 2ca0000.iommu: 	non-coherent table walk
+[    4.336809] arm-smmu 2ca0000.iommu: 	(IDR0.CTTW overridden by FW configuration)
+[    4.336813] arm-smmu 2ca0000.iommu: 	stream matching with 4 register groups
+[    4.336834] arm-smmu 2ca0000.iommu: 	5 context banks (0 stage-2 only)
+[    4.336850] arm-smmu 2ca0000.iommu: 	Supported page sizes: 0x61311000
+[    4.336854] arm-smmu 2ca0000.iommu: 	Stage-1: 48-bit VA -> 48-bit IPA
+[    4.379856] cpu cpu4: Voltage update failed freq=3072000
+[    4.379862] cpu cpu4: failed to update OPP for freq=3072000
+[    4.379867] cpu cpu4: Voltage update failed freq=3148800
+[    4.379870] cpu cpu4: failed to update OPP for freq=3148800
+[    4.379875] cpu cpu4: Voltage update failed freq=3148800
+[    4.379877] cpu cpu4: failed to update OPP for freq=3148800
+[    4.382356] qcom-qmp-phy 1c1c000.phy: Registered Qcom-QMP phy
+[    4.382628] qcom-qmp-phy 88e9000.phy: Registered Qcom-QMP phy
+[    4.382867] qcom-qmp-phy 88ee000.phy: Registered Qcom-QMP phy
+[    4.383028] qcom-qmp-phy 88eb000.phy: Registered Qcom-QMP phy
+[    4.383195] qcom-qmp-phy 88ec000.phy: Registered Qcom-QMP phy
+[    4.383868] qcom-pcie 1c18000.pci: Adding to iommu group 3
+[    4.384056] qcom-pcie 1c18000.pci: supply vdda not found, using dummy regulator
+[    4.384078] qcom-pcie 1c18000.pci: supply vddpe-3v3 not found, using dummy regulator
+[    4.384116] qcom-pcie 1c18000.pci: host bridge /soc@0/pci@1c18000 ranges:
+[    4.384125] qcom-pcie 1c18000.pci:       IO 0x0070200000..0x00702fffff -> 0x0070200000
+[    4.384130] qcom-pcie 1c18000.pci:      MEM 0x0070300000..0x0073ffffff -> 0x0070300000
+[    4.502822] qcom-pcie 1c18000.pci: iATU unroll: enabled
+[    4.502825] qcom-pcie 1c18000.pci: Detected iATU regions: 8 outbound, 8 inbound
+[    4.603553] qcom-pcie 1c18000.pci: Link up
+[    4.603608] qcom-pcie 1c18000.pci: PCI host bridge to bus 0002:00
+[    4.603610] pci_bus 0002:00: root bus resource [bus 00-ff]
+[    4.603612] pci_bus 0002:00: root bus resource [io  0x0000-0xfffff] (bus address [0x70200000-0x702fffff])
+[    4.603614] pci_bus 0002:00: root bus resource [mem 0x70300000-0x73ffffff]
+[    4.603625] pci 0002:00:00.0: [17cb:0109] type 01 class 0x060400
+[    4.603631] pci 0002:00:00.0: reg 0x10: [mem 0x00000000-0x00000fff]
+[    4.603663] pci 0002:00:00.0: PME# supported from D0 D3hot D3cold
+[    4.604414] pci 0002:01:00.0: [1c5c:1327] type 00 class 0x010802
+[    4.604487] pci 0002:01:00.0: reg 0x10: [mem 0x00000000-0x00003fff 64bit]
+[    4.604967] pci 0002:01:00.0: supports D1
+[    4.604968] pci 0002:01:00.0: PME# supported from D0 D1 D3hot
+[    4.605225] pci 0002:01:00.0: 15.752 Gb/s available PCIe bandwidth, limited by 8.0 GT/s PCIe x2 link at 0002:00:00.0 (capable of 31.504 Gb/s with 8.0 GT/s PCIe x4 link)
+[    4.608734] pci 0002:00:00.0: BAR 14: assigned [mem 0x70300000-0x704fffff]
+[    4.608736] pci 0002:00:00.0: BAR 15: assigned [mem 0x70500000-0x706fffff 64bit pref]
+[    4.608738] pci 0002:00:00.0: BAR 0: assigned [mem 0x70700000-0x70700fff]
+[    4.608740] pci 0002:00:00.0: BAR 13: assigned [io  0x1000-0x1fff]
+[    4.608742] pci 0002:01:00.0: BAR 0: assigned [mem 0x70300000-0x70303fff 64bit]
+[    4.608776] pci 0002:00:00.0: PCI bridge to [bus 01-ff]
+[    4.608777] pci 0002:00:00.0:   bridge window [io  0x1000-0x1fff]
+[    4.608779] pci 0002:00:00.0:   bridge window [mem 0x70300000-0x704fffff]
+[    4.608780] pci 0002:00:00.0:   bridge window [mem 0x70500000-0x706fffff 64bit pref]
+[    4.608843] pcieport 0002:00:00.0: Adding to iommu group 3
+[    4.609152] pcieport 0002:00:00.0: PME: Signaling with IRQ 160
+[    4.609379] pcieport 0002:00:00.0: AER: enabled with IRQ 160
+[    4.609396] pcieport 0002:00:00.0: pciehp: Slot #0 AttnBtn+ PwrCtrl+ MRL+ AttnInd+ PwrInd+ HotPlug+ Surprise+ Interlock+ NoCompl- IbPresDis- LLActRep+
+[    4.609807] nvme 0002:01:00.0: Adding to iommu group 3
+[    4.610012] nvme nvme0: pci function 0002:01:00.0
+[    4.610197] dwc3 a600000.dwc3: Adding to iommu group 4
+[    4.610198] nvme 0002:01:00.0: enabling device (0000 -> 0002)
+[    4.613446] nvme nvme0: missing or invalid SUBNQN field.
+[    4.616021] nvme nvme0: 8/0/0 default/read/poll queues
+[    4.666019] xhci-hcd xhci-hcd.0.auto: xHCI Host Controller
+[    4.666372] xhci-hcd xhci-hcd.0.auto: new USB bus registered, assigned bus number 1
+[    4.666505] xhci-hcd xhci-hcd.0.auto: hcc params 0x0230ffe5 hci version 0x110 quirks 0x0000000000010010
+[    4.666524] xhci-hcd xhci-hcd.0.auto: irq 170, io mem 0x0a600000
+[    4.666587] xhci-hcd xhci-hcd.0.auto: xHCI Host Controller
+[    4.666957] xhci-hcd xhci-hcd.0.auto: new USB bus registered, assigned bus number 2
+[    4.666966] xhci-hcd xhci-hcd.0.auto: Host supports USB 3.1 Enhanced SuperSpeed
+[    4.667012] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.19
+[    4.667014] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    4.667016] usb usb1: Product: xHCI Host Controller
+[    4.667017] usb usb1: Manufacturer: Linux 5.19.0-1-surface-dev xhci-hcd
+[    4.667018] usb usb1: SerialNumber: xhci-hcd.0.auto
+[    4.667510] hub 1-0:1.0: USB hub found
+[    4.667526] hub 1-0:1.0: 1 port detected
+[    4.667600] usb usb2: We don't know the algorithms for LPM for this host, disabling LPM.
+[    4.667619] usb usb2: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 5.19
+[    4.667621] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    4.667622] usb usb2: Product: xHCI Host Controller
+[    4.667623] usb usb2: Manufacturer: Linux 5.19.0-1-surface-dev xhci-hcd
+[    4.667624] usb usb2: SerialNumber: xhci-hcd.0.auto
+[    4.667971] hub 2-0:1.0: USB hub found
+[    4.667979] hub 2-0:1.0: 1 port detected
+[    4.668300] dwc3 a800000.dwc3: Adding to iommu group 5
+[    4.724068] xhci-hcd xhci-hcd.1.auto: xHCI Host Controller
+[    4.724432] xhci-hcd xhci-hcd.1.auto: new USB bus registered, assigned bus number 3
+[    4.724572] xhci-hcd xhci-hcd.1.auto: hcc params 0x0230ffe5 hci version 0x110 quirks 0x0000000000010010
+[    4.724596] xhci-hcd xhci-hcd.1.auto: irq 171, io mem 0x0a800000
+[    4.724657] xhci-hcd xhci-hcd.1.auto: xHCI Host Controller
+[    4.725028] xhci-hcd xhci-hcd.1.auto: new USB bus registered, assigned bus number 4
+[    4.725037] xhci-hcd xhci-hcd.1.auto: Host supports USB 3.1 Enhanced SuperSpeed
+[    4.725075] usb usb3: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.19
+[    4.725077] usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    4.725078] usb usb3: Product: xHCI Host Controller
+[    4.725079] usb usb3: Manufacturer: Linux 5.19.0-1-surface-dev xhci-hcd
+[    4.725080] usb usb3: SerialNumber: xhci-hcd.1.auto
+[    4.725539] hub 3-0:1.0: USB hub found
+[    4.725547] hub 3-0:1.0: 1 port detected
+[    4.725611] usb usb4: We don't know the algorithms for LPM for this host, disabling LPM.
+[    4.725631] usb usb4: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 5.19
+[    4.725633] usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    4.725634] usb usb4: Product: xHCI Host Controller
+[    4.725636] usb usb4: Manufacturer: Linux 5.19.0-1-surface-dev xhci-hcd
+[    4.725637] usb usb4: SerialNumber: xhci-hcd.1.auto
+[    4.725998] hub 4-0:1.0: USB hub found
+[    4.726008] hub 4-0:1.0: 1 port detected
+[    4.726309] dwc3 a400000.dwc3: Adding to iommu group 6
+[    4.785384] xhci-hcd xhci-hcd.2.auto: xHCI Host Controller
+[    4.785543] xhci-hcd xhci-hcd.2.auto: new USB bus registered, assigned bus number 5
+[    4.785669] xhci-hcd xhci-hcd.2.auto: hcc params 0x0238ffe5 hci version 0x110 quirks 0x0000000000010010
+[    4.785686] xhci-hcd xhci-hcd.2.auto: irq 172, io mem 0x0a400000
+[    4.785746] xhci-hcd xhci-hcd.2.auto: xHCI Host Controller
+[    4.785897] xhci-hcd xhci-hcd.2.auto: new USB bus registered, assigned bus number 6
+[    4.785899] xhci-hcd xhci-hcd.2.auto: Host supports USB 3.1 Enhanced SuperSpeed
+[    4.785932] usb usb5: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.19
+[    4.785934] usb usb5: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    4.785935] usb usb5: Product: xHCI Host Controller
+[    4.785936] usb usb5: Manufacturer: Linux 5.19.0-1-surface-dev xhci-hcd
+[    4.785937] usb usb5: SerialNumber: xhci-hcd.2.auto
+[    4.786426] hub 5-0:1.0: USB hub found
+[    4.786435] hub 5-0:1.0: 2 ports detected
+[    4.786520] usb usb6: We don't know the algorithms for LPM for this host, disabling LPM.
+[    4.786542] usb usb6: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 5.19
+[    4.786544] usb usb6: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    4.786546] usb usb6: Product: xHCI Host Controller
+[    4.786547] usb usb6: Manufacturer: Linux 5.19.0-1-surface-dev xhci-hcd
+[    4.786548] usb usb6: SerialNumber: xhci-hcd.2.auto
+[    4.786897] hub 6-0:1.0: USB hub found
+[    4.786905] hub 6-0:1.0: 2 ports detected
+[    4.788994] input: Volume keys as /devices/platform/gpio-keys/input/input0
+[    4.790921] clk: Not disabling unused clocks
+[    4.790980] ALSA device list:
+[    4.791038]   No soundcards found.
+[    5.022116] usb 5-1: new high-speed USB device number 2 using xhci-hcd
+[    5.437671]  nvme0n1: p1 p2 p3 p4 p5 p6
+[    5.459655] Freeing unused kernel memory: 6656K
+[    5.460573] Run /init as init process
+[    5.460587]   with arguments:
+[    5.460597]     /init
+[    5.460604]   with environment:
+[    5.460611]     HOME=/
+[    5.460618]     TERM=linux
+[    5.460625]     BOOT_IMAGE=/boot/vmlinuz-linux-surface-dev
+[    5.488709] usb 6-1: new SuperSpeed USB device number 2 using xhci-hcd
+[    5.510183] usb 6-1: New USB device found, idVendor=045e, idProduct=0900, bcdDevice=47.53
+[    5.510189] usb 6-1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    5.510190] usb 6-1: Product: Surface Dock USB3Hub
+[    5.510191] usb 6-1: Manufacturer: Microsoft
+[    5.540765] hub 6-1:1.0: USB hub found
+[    5.541372] hub 6-1:1.0: 2 ports detected
+[    5.544651] usb 5-1: New USB device found, idVendor=045e, idProduct=0901, bcdDevice=47.53
+[    5.544656] usb 5-1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    5.544657] usb 5-1: Product: Surface Dock USB2Hub
+[    5.544658] usb 5-1: Manufacturer: Microsoft
+[    5.590198] hub 5-1:1.0: USB hub found
+[    5.590799] hub 5-1:1.0: 4 ports detected
+[    5.814742] usb 6-1.1: new SuperSpeed USB device number 3 using xhci-hcd
+[    5.831765] usb 6-1.1: New USB device found, idVendor=045e, idProduct=0902, bcdDevice=47.54
+[    5.831770] usb 6-1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    5.831772] usb 6-1.1: Product: Surface Dock USB3Hub
+[    5.831773] usb 6-1.1: Manufacturer: Microsoft
+[    5.860092] hub 6-1.1:1.0: USB hub found
+[    5.860459] hub 6-1.1:1.0: 4 ports detected
+[    5.927760] usb 6-1.2: new SuperSpeed USB device number 4 using xhci-hcd
+[    5.943006] usb 6-1.2: New USB device found, idVendor=045e, idProduct=07c6, bcdDevice=30.00
+[    5.943010] usb 6-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=6
+[    5.943011] usb 6-1.2: Product: Surface Dock GigE
+[    5.943012] usb 6-1.2: Manufacturer: Microsoft
+[    5.943013] usb 6-1.2: SerialNumber: 000001000000
+[    6.008134] usb 5-1.1: new high-speed USB device number 3 using xhci-hcd
+[    6.106897] usb 5-1.1: New USB device found, idVendor=045e, idProduct=0903, bcdDevice=47.54
+[    6.106902] usb 5-1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    6.106904] usb 5-1.1: Product: Surface Dock USB2Hub
+[    6.106905] usb 5-1.1: Manufacturer: Microsoft
+[    6.164197] hub 5-1.1:1.0: USB hub found
+[    6.165067] hub 5-1.1:1.0: 4 ports detected
+[    6.214426] usb 6-1.2: reset SuperSpeed USB device number 4 using xhci-hcd
+[    6.250136] r8152 6-1.2:1.0: Direct firmware load for rtl_nic/rtl8153a-3.fw failed with error -2
+[    6.250139] r8152 6-1.2:1.0: unable to load firmware patch rtl_nic/rtl8153a-3.fw (-2)
+[    6.277656] r8152 6-1.2:1.0 eth0: v1.12.12
+[    6.309118] usb 5-1.3: new full-speed USB device number 4 using xhci-hcd
+[    6.389648] usb 5-1.3: New USB device found, idVendor=045e, idProduct=0904, bcdDevice=70.07
+[    6.389652] usb 5-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    6.389653] usb 5-1.3: Product: Surface Dock Extender
+[    6.389655] usb 5-1.3: Manufacturer: Microsoft
+[    6.486611] hid-generic 0003:045E:0904.0001: hiddev96,hidraw0: USB HID v1.11 Device [Microsoft Surface Dock Extender] on usb-xhci-hcd.2.auto-1.3/input0
+[    6.557313] usb 5-1.4: new full-speed USB device number 5 using xhci-hcd
+[    6.813578] usb 5-1.4: New USB device found, idVendor=045e, idProduct=0905, bcdDevice= 0.01
+[    6.813582] usb 5-1.4: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[    6.813584] usb 5-1.4: Product: Surface Dock
+[    6.813585] usb 5-1.4: Manufacturer: Microsoft
+[    6.813586] usb 5-1.4: SerialNumber: 000000000000
+[    6.909454] hid-generic 0003:045E:0905.0002: No inputs registered, leaving
+[    6.909513] hid-generic 0003:045E:0905.0002: hidraw1: USB HID v1.11 Device [Microsoft Surface Dock] on usb-xhci-hcd.2.auto-1.4/input3
+[    7.273622] BTRFS: device label Linux Root devid 1 transid 4680 /dev/nvme0n1p6 scanned by systemd-udevd (284)
+[    7.446169] BTRFS info (device nvme0n1p6): flagging fs with big metadata feature
+[    7.446178] BTRFS info (device nvme0n1p6): using free space tree
+[    7.446182] BTRFS info (device nvme0n1p6): has skinny extents
+[    7.482696] BTRFS info (device nvme0n1p6): enabling ssd optimizations
+[    7.861542] systemd[1]: System time before build time, advancing clock.
+[    7.926729] systemd[1]: systemd 251.2-1-arch running in system mode (+PAM +AUDIT -SELINUX -APPARMOR -IMA +SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY +P11KIT -QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -BPF_FRAMEWORK +XKBCOMMON +UTMP -SYSVINIT default-hierarchy=unified)
+[    7.926768] systemd[1]: Detected architecture arm64.
+[    7.933758] systemd[1]: Hostname set to <spx>.
+[    8.961158] systemd[1]: Queued start job for default target Graphical Interface.
+[    8.964684] systemd[1]: Created slice Slice /system/getty.
+[    8.969417] systemd[1]: Created slice Slice /system/modprobe.
+[    8.971396] systemd[1]: Created slice Slice /system/systemd-fsck.
+[    8.977242] systemd[1]: Created slice User and Session Slice.
+[    8.978524] systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+[    8.984612] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[    8.986316] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[    8.992285] systemd[1]: Reached target Local Encrypted Volumes.
+[    8.993081] systemd[1]: Reached target Login Prompts.
+[    8.993880] systemd[1]: Reached target Local Integrity Protected Volumes.
+[    8.994688] systemd[1]: Reached target Path Units.
+[    8.995503] systemd[1]: Reached target Remote File Systems.
+[    8.998861] systemd[1]: Reached target Slice Units.
+[    9.007243] systemd[1]: Reached target Local Verity Protected Volumes.
+[    9.008516] systemd[1]: Listening on Device-mapper event daemon FIFOs.
+[    9.019406] systemd[1]: Listening on LVM2 poll daemon socket.
+[    9.026238] systemd[1]: Listening on Process Core Dump Socket.
+[    9.028465] systemd[1]: Listening on Journal Audit Socket.
+[    9.034087] systemd[1]: Listening on Journal Socket (/dev/log).
+[    9.035912] systemd[1]: Listening on Journal Socket.
+[    9.042576] systemd[1]: Listening on udev Control Socket.
+[    9.044102] systemd[1]: Listening on udev Kernel Socket.
+[    9.048923] systemd[1]: Mounting Huge Pages File System...
+[    9.057839] systemd[1]: Mounting POSIX Message Queue File System...
+[    9.062997] systemd[1]: Mounting Kernel Debug File System...
+[    9.064889] systemd[1]: Kernel Trace File System was skipped because of a failed condition check (ConditionPathExists=/sys/kernel/tracing).
+[    9.069204] systemd[1]: Starting Create List of Static Device Nodes...
+[    9.076007] systemd[1]: Starting Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+[    9.081029] systemd[1]: Starting Load Kernel Module configfs...
+[    9.086246] systemd[1]: Starting Load Kernel Module drm...
+[    9.091407] systemd[1]: Starting Load Kernel Module fuse...
+[    9.102889] systemd[1]: Starting Journal Service...
+[    9.109439] systemd[1]: Starting Load Kernel Modules...
+[    9.113833] systemd[1]: Starting Remount Root and Kernel File Systems...
+[    9.117677] systemd[1]: Repartition Root Disk was skipped because all trigger condition checks failed.
+[    9.121190] systemd[1]: Starting Coldplug All udev Devices...
+[    9.122540] fuse: init (API version 7.36)
+[    9.133160] systemd[1]: Mounted Huge Pages File System.
+[    9.134635] systemd[1]: Mounted POSIX Message Queue File System.
+[    9.136824] systemd[1]: Mounted Kernel Debug File System.
+[    9.138637] systemd[1]: Finished Create List of Static Device Nodes.
+[    9.142371] systemd[1]: modprobe@configfs.service: Deactivated successfully.
+[    9.143035] systemd[1]: Finished Load Kernel Module configfs.
+[    9.148637] systemd[1]: modprobe@drm.service: Deactivated successfully.
+[    9.149317] systemd[1]: Finished Load Kernel Module drm.
+[    9.153218] systemd[1]: modprobe@fuse.service: Deactivated successfully.
+[    9.153845] systemd[1]: Finished Load Kernel Module fuse.
+[    9.161819] systemd[1]: Mounting FUSE Control File System...
+[    9.167767] systemd[1]: Mounting Kernel Configuration File System...
+[    9.176317] systemd[1]: Mounted FUSE Control File System.
+[    9.240946] BTRFS info (device nvme0n1p6: state M): using free space tree
+[    9.281231] systemd[1]: Finished Load Kernel Modules.
+[    9.283595] systemd[1]: Finished Remount Root and Kernel File Systems.
+[    9.288218] systemd[1]: Mounted Kernel Configuration File System.
+[    9.293821] systemd[1]: First Boot Wizard was skipped because of a failed condition check (ConditionFirstBoot=yes).
+[    9.295641] systemd[1]: Rebuild Hardware Database was skipped because of a failed condition check (ConditionNeedsUpdate=/etc).
+[    9.298926] systemd[1]: Starting Load/Save Random Seed...
+[    9.306701] systemd[1]: Starting Apply Kernel Variables...
+[    9.307992] systemd[1]: Create System Users was skipped because of a failed condition check (ConditionNeedsUpdate=/etc).
+[    9.311548] systemd[1]: Starting Create Static Device Nodes in /dev...
+[    9.323536] systemd[1]: Finished Apply Kernel Variables.
+[    9.383724] systemd[1]: Finished Create Static Device Nodes in /dev.
+[    9.391215] systemd[1]: Starting Rule-based Manager for Device Events and Files...
+[    9.433508] systemd[1]: Started Journal Service.
+[    9.456492] systemd-journald[342]: Received client request to flush runtime journal.
+[    9.497833] systemd-journald[342]: File /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal corrupted or uncleanly shut down, renaming and replacing.
+[    9.677204] random: crng init done
+[   10.990546] Adding 4194300k swap on /dev/nvme0n1p5.  Priority:-2 extents:1 across:4194300k SSFS
+[   11.119032] qcom_q6v5_pas 4080000.remoteproc: supply cx not found, using dummy regulator
+[   11.156606] qcom_q6v5_pas 4080000.remoteproc: supply px not found, using dummy regulator
+[   11.184729] remoteproc remoteproc0: 4080000.remoteproc is available
+[   11.186642] qcom_q6v5_pas 8300000.remoteproc: supply cx not found, using dummy regulator
+[   11.189125] qcom_q6v5_pas 8300000.remoteproc: supply px not found, using dummy regulator
+[   11.202041] adreno 2c00000.gpu: Adding to iommu group 7
+[   11.203832] remoteproc remoteproc1: 8300000.remoteproc is available
+[   11.204279] msm-mdss ae00000.mdss: Adding to iommu group 8
+[   11.206354] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[   11.213692] remoteproc remoteproc1: powering up 8300000.remoteproc
+[   11.213703] remoteproc remoteproc1: Booting fw image qcom/msft/surface/pro-x-sq2/qccdsp8180.mbn, size 3094036
+[   11.214217] qcom_q6v5_pas 17300000.remoteproc: supply cx not found, using dummy regulator
+[   11.221196] qcom_q6v5_pas 17300000.remoteproc: supply px not found, using dummy regulator
+[   11.228392] remoteproc remoteproc2: 17300000.remoteproc is available
+[   11.242273] remoteproc remoteproc2: powering up 17300000.remoteproc
+[   11.242279] remoteproc remoteproc2: Booting fw image qcom/msft/surface/pro-x-sq2/qcadsp8180.mbn, size 10758800
+[   11.277427] cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[   11.277501] platform ae9a000.displayport-controller: Fixing up cyclic dependency with ae01000.mdp
+[   11.310676] Bluetooth: Core ver 2.22
+[   11.310709] NET: Registered PF_BLUETOOTH protocol family
+[   11.310710] Bluetooth: HCI device and connection manager initialized
+[   11.310715] Bluetooth: HCI socket layer initialized
+[   11.310718] Bluetooth: L2CAP socket layer initialized
+[   11.310723] Bluetooth: SCO socket layer initialized
+[   11.338077] remoteproc remoteproc1: remote processor 8300000.remoteproc is now up
+[   11.364585] ath10k_snoc 18800000.wifi: Adding to iommu group 9
+[   11.365370] Bluetooth: HCI UART driver ver 2.3
+[   11.365375] Bluetooth: HCI UART protocol H4 registered
+[   11.365378] Bluetooth: HCI UART protocol BCSP registered
+[   11.365431] Bluetooth: HCI UART protocol LL registered
+[   11.365433] Bluetooth: HCI UART protocol ATH3K registered
+[   11.365467] Bluetooth: HCI UART protocol Three-wire (H5) registered
+[   11.365641] Bluetooth: HCI UART protocol Intel registered
+[   11.365789] Bluetooth: HCI UART protocol Broadcom registered
+[   11.365836] Bluetooth: HCI UART protocol QCA registered
+[   11.365879] Bluetooth: HCI UART protocol Marvell registered
+[   11.394102] msm-dp-display ae9a000.displayport-controller: supply vdda-1p2 not found, using dummy regulator
+[   11.394338] msm-dp-display ae9a000.displayport-controller: supply vdda-0p9 not found, using dummy regulator
+[   11.394985] msm_dpu ae01000.mdp: bound ae9a000.displayport-controller (ops dp_display_comp_ops [msm])
+[   11.426002] Bluetooth: hci0: setting up wcn399x
+[   11.432754] input: pm8941_pwrkey as /devices/platform/soc@0/c440000.spmi/spmi-0/0-00/c440000.spmi:pmic@0:power-on@800/c440000.spmi:pmic@0:power-on@800:pwrkey/input/input2
+[   11.438474] adreno 2c00000.gpu: supply vdd not found, using dummy regulator
+[   11.438534] spmi-temp-alarm c440000.spmi:pmic@0:temp-alarm@2400: failed to register sensor
+[   11.441049] adreno 2c00000.gpu: supply vddcx not found, using dummy regulator
+[   11.442210] platform 2c6a000.gmu: Adding to iommu group 10
+[   11.444296] remoteproc remoteproc2: remote processor 17300000.remoteproc is now up
+[   11.451125] spi_hid spi0.0: spi_hid_probe: d3 -> d0
+[   11.456985] msm_dpu ae01000.mdp: bound 2c00000.gpu (ops a3xx_ops [msm])
+[   11.461585] [drm:dpu_kms_hw_init:1114] dpu hardware revision:0x50010001
+[   11.516600] panel-simple-dp-aux aux-ae9a000.displayport-controller: supply power not found, using dummy regulator
+[   11.525006] [drm:_dpu_kms_initialize_displayport:633] [dpu error]modeset_init failed for DP, rc = -517
+[   11.525054] [drm:_dpu_kms_setup_displays:715] [dpu error]initialize_DP failed, rc = -517
+[   11.525071] [drm:dpu_kms_hw_init:1207] [dpu error]modeset init failed: -517
+[   11.525635] surface_serial_hub serial1-0: SAM firmware version: 1.303.139
+[   11.526812] msm_dpu ae01000.mdp: [drm:msm_drm_init.constprop.0 [msm]] *ERROR* kms hw init failed: -517
+[   11.539130] surface_serial_hub serial1-0: event: unhandled event (rqid: 0x15, tc: 0x15, tid: 0x02, cid: 0x00, iid: 0x02)
+[   11.539261] surface_serial_hub serial1-0: event: unhandled event (rqid: 0x15, tc: 0x15, tid: 0x02, cid: 0x00, iid: 0x02)
+[   11.590022] input: spi 045E:0C21 as /devices/platform/soc@0/8c0000.geniqup/884000.spi/spi_master/spi0/spi0.0/001C:045E:0C21.0003/input/input3
+[   11.595181] input: spi 045E:0C21 as /devices/platform/soc@0/8c0000.geniqup/884000.spi/spi_master/spi0/spi0.0/001C:045E:0C21.0003/input/input4
+[   11.604815] input: spi 045E:0C21 as /devices/platform/soc@0/8c0000.geniqup/884000.spi/spi_master/spi0/spi0.0/001C:045E:0C21.0003/input/input5
+[   11.611486] input: spi 045E:0C21 as /devices/platform/soc@0/8c0000.geniqup/884000.spi/spi_master/spi0/spi0.0/001C:045E:0C21.0003/input/input6
+[   11.614184] input: spi 045E:0C21 Stylus as /devices/platform/soc@0/8c0000.geniqup/884000.spi/spi_master/spi0/spi0.0/001C:045E:0C21.0003/input/input7
+[   11.620327] input: spi 045E:0C21 as /devices/platform/soc@0/8c0000.geniqup/884000.spi/spi_master/spi0/spi0.0/001C:045E:0C21.0003/input/input8
+[   11.630902] input: spi 045E:0C21 as /devices/platform/soc@0/8c0000.geniqup/884000.spi/spi_master/spi0/spi0.0/001C:045E:0C21.0003/input/input9
+[   11.632910] [drm:dp_display_probe [msm]] *ERROR* component add failed, rc=-517
+[   11.633657] pwm-backlight backlight: supply power not found, using dummy regulator
+[   11.634635] msm-dp-display ae9a000.displayport-controller: supply vdda-1p2 not found, using dummy regulator
+[   11.634666] msm-dp-display ae9a000.displayport-controller: supply vdda-0p9 not found, using dummy regulator
+[   11.635338] msm_dpu ae01000.mdp: bound ae9a000.displayport-controller (ops dp_display_comp_ops [msm])
+[   11.635971] adreno 2c00000.gpu: supply vdd not found, using dummy regulator
+[   11.661578] input: spi 045E:0C21 as /devices/platform/soc@0/8c0000.geniqup/884000.spi/spi_master/spi0/spi0.0/001C:045E:0C21.0003/input/input10
+[   11.661887] adreno 2c00000.gpu: supply vddcx not found, using dummy regulator
+[   11.683619] msm_dpu ae01000.mdp: bound 2c00000.gpu (ops a3xx_ops [msm])
+[   11.697731] [drm:dpu_kms_hw_init:1114] dpu hardware revision:0x50010001
+[   11.746418] panel-simple-dp-aux aux-ae9a000.displayport-controller: supply power not found, using dummy regulator
+[   11.812259] hid-generic 001C:045E:0C21.0003: input,hidraw2: <UNKNOWN> HID v1.00 Device [spi 045E:0C21] on spi0.0
+[   11.812385] spi_hid spi0.0: spi_hid_create_device_work: d0 -> d3
+[   11.814587] mc: Linux media interface: v0.10
+[   11.815082] Bluetooth: hci0: QCA Product ID   :0x0000000a
+[   11.815084] Bluetooth: hci0: QCA SOC Version  :0x40010224
+[   11.815085] Bluetooth: hci0: QCA ROM Version  :0x00001001
+[   11.815086] Bluetooth: hci0: QCA Patch Version:0x00006699
+[   11.828398] Bluetooth: hci0: QCA controller version 0x02241001
+[   11.828403] Bluetooth: hci0: QCA Downloading qca/crbtfw01.tlv
+[   11.933590] panel-simple-dp-aux aux-ae9a000.displayport-controller: Detected LGD LP129WT112684 (0x0555)
+[   11.953193] [drm] Initialized msm 1.9.0 20130625 for ae01000.mdp on minor 0
+[   11.954843] msm_dpu ae01000.mdp: [drm:adreno_request_fw [msm]] loaded qcom/a680_sqe.fw from new location
+[   11.956625] msm_dpu ae01000.mdp: [drm:adreno_request_fw [msm]] loaded qcom/a680_gmu.bin from new location
+[   11.959613] surface_rtc 01:01:01:00:00: registered as rtc0
+[   11.960822] surface_rtc 01:01:01:00:00: setting system clock to 2022-06-26T15:29:59 UTC (1656257399)
+[   11.995310] checking generic (80600000 1518000) vs hw (0 ffffffffffffffff)
+[   11.995318] fb0: switching to msm from EFI VGA
+[   12.004539] Console: switching to colour dummy device 80x25
+[   12.007484] input: Microsoft Surface KIP Tablet Mode Switch as /devices/platform/soc@0/cc0000.geniqup/c94000.serial/serial1/serial1-0/01:0e:01:00:01/input/input11
+[   12.051254] spi_hid spi0.0: Invalid input report sync constant (0x0)
+[   12.051258] spi_hid spi0.0: failed to validate header: -22
+[   12.051259] spi_hid: header buffer: 00 00 00 00
+[   12.062128] spi_hid spi0.0: spi_hid_ll_open: d3 -> d0
+[   12.070482] spi_hid spi0.0: spi_hid_ll_close: d0 -> d3
+[   12.090437] remoteproc remoteproc0: powering up 4080000.remoteproc
+[   12.117273] usbcore: registered new interface driver snd-usb-audio
+[   12.124356] ------------[ cut here ]------------
+[   12.124361] disp_cc_mdss_edp_pixel_clk_src: rcg didn't update its configuration.
+[   12.124391] WARNING: CPU: 1 PID: 77 at drivers/clk/qcom/clk-rcg2.c:132 update_config+0xc8/0xdc
+[   12.124404] Modules linked in: joydev surface_aggregator_tabletsw surface_aggregator_hub surface_charger rtc_surface surface_battery snd_soc_hdmi_codec snd_usb_audio snd_usbmidi_lib snd_hwdep snd_rawmidi snd_seq_device mc leds_qcom_lpg surface_aggregator apds9960(+) qcom_spmi_temp_alarm hci_uart qcom_pon btqca ath10k_snoc btrtl ath10k_core btbcm btintel ath mac80211 bluetooth qcom_spmi_adc5 spi_hid ecdh_generic cfg80211 ecc msm phy_qcom_edp rfkill libarc4 qcom_tsens gpu_sched dispcc_sm8250 qcom_q6v5_pas qcom_pil_info qcom_q6v5 qcom_sysmon qcom_common mdt_loader lmh pwm_bl crypto_user fuse
+[   12.124507] CPU: 1 PID: 77 Comm: kworker/u16:1 Not tainted 5.19.0-1-surface-dev #14
+[   12.124512] Hardware name: Microsoft Corporation Surface Pro X/Surface Pro X, BIOS 7.590.140 01/07/2022
+[   12.124516] Workqueue: events_unbound deferred_probe_work_func
+[   12.124525] pstate: 60400005 (nZCv daif +PAN -UAO -TCO -DIT -SSBS BTYPE=--)
+[   12.124530] pc : update_config+0xc8/0xdc
+[   12.124534] lr : update_config+0xc8/0xdc
+[   12.124538] sp : ffff80000b23b160
+[   12.124540] x29: ffff80000b23b160 x28: 0000000000000001 x27: ffff0000826192c8
+[   12.124548] x26: ffff8000013e3a10 x25: ffff800009a71698 x24: 000000000a983ff0
+[   12.124555] x23: 0000000050775d80 x22: ffff8000012eaee0 x21: ffff00008ce21280
+[   12.124563] x20: ffff8000012eaec8 x19: 0000000000000000 x18: fffffffffffccfb0
+[   12.124570] x17: ffff800d5ba2f000 x16: ffff80000800c000 x15: 0000000000000050
+[   12.124577] x14: fffffffffffcd000 x13: 2e6e6f6974617275 x12: 6769666e6f632073
+[   12.124585] x11: 7469206574616470 x10: 752074276e646964 x9 : 72756769666e6f63
+[   12.124592] x8 : ffff80000a2c9c40 x7 : ffff80000b23af50 x6 : 00000000ffffe2f0
+[   12.124599] x5 : ffff80000b23af50 x4 : 0000000000000001 x3 : ffff800009d3e008
+[   12.124606] x2 : 0000000000000000 x1 : 0000000000000000 x0 : ffff000080355b80
+[   12.124614] Call trace:
+[   12.124616]  update_config+0xc8/0xdc
+[   12.124620]  clk_rcg2_configure+0xac/0xb4
+[   12.124624]  clk_rcg2_dp_set_rate+0x114/0x150
+[   12.124628]  clk_change_rate+0x144/0x2b4
+[   12.124635]  clk_change_rate+0xec/0x2b4
+[   12.124639]  clk_core_set_rate_nolock+0x1dc/0x2a0
+[   12.124644]  clk_set_rate+0x38/0x150
+[   12.124649]  qcom_edp_phy_power_on+0x2dc/0x670 [phy_qcom_edp]
+[   12.124659]  phy_power_on+0x78/0x130
+[   12.124666]  dp_ctrl_enable_mainlink_clocks+0xb0/0x120 [msm]
+[   12.124767]  dp_ctrl_on_link+0x94/0x464 [msm]
+[   12.124861]  dp_display_process_hpd_high+0x98/0xf0 [msm]
+[   12.124954]  dp_hpd_plug_handle.part.0+0x88/0x114 [msm]
+[   12.125048]  dp_bridge_enable+0x3c/0x214 [msm]
+[   12.125142]  drm_atomic_bridge_chain_enable+0x8c/0xd0
+[   12.125148]  drm_atomic_helper_commit_modeset_enables+0x188/0x26c
+[   12.125157]  msm_atomic_commit_tail+0x1ac/0x4e0 [msm]
+[   12.125252]  commit_tail+0xa4/0x180
+[   12.125258]  drm_atomic_helper_commit+0x13c/0x36c
+[   12.125263]  drm_atomic_commit+0xa4/0xe0
+[   12.125270]  drm_client_modeset_commit_atomic+0x200/0x250
+[   12.125276]  drm_client_modeset_commit_locked+0x5c/0x190
+[   12.125282]  drm_client_modeset_commit+0x30/0x60
+[   12.125286]  __drm_fb_helper_restore_fbdev_mode_unlocked+0xa8/0xf0
+[   12.125292]  drm_fb_helper_set_par+0x3c/0x74
+[   12.125296]  fbcon_init+0x1c0/0x48c
+[   12.125302]  visual_init+0xb4/0x104
+[   12.125308]  do_bind_con_driver.isra.0+0x1b8/0x390
+[   12.125313]  do_take_over_console+0x48/0x60
+[   12.125317]  do_fbcon_takeover+0x6c/0xe0
+[   12.125321]  fbcon_fb_registered+0x198/0x1d0
+[   12.125326]  do_register_framebuffer+0x170/0x260
+[   12.125332]  register_framebuffer+0x2c/0x50
+[   12.125337]  __drm_fb_helper_initial_config_and_unlock+0xa4/0x150
+[   12.125342]  drm_fb_helper_initial_config+0x4c/0x60
+[   12.125346]  msm_fbdev_init+0x88/0xf0 [msm]
+[   12.125445]  msm_drm_init.constprop.0+0x444/0x4b0 [msm]
+[   12.125538]  msm_drm_bind+0x10/0x1c [msm]
+[   12.125631]  try_to_bring_up_aggregate_device+0x94/0x150
+[   12.125637]  __component_add+0xb8/0x1b4
+[   12.125642]  component_add+0x14/0x20
+[   12.125646]  dp_display_probe+0x150/0x210 [msm]
+[   12.125738]  platform_probe+0x68/0xc0
+[   12.125744]  really_probe+0x194/0x3e0
+[   12.125748]  __driver_probe_device+0x114/0x190
+[   12.125752]  driver_probe_device+0x3c/0xf0
+[   12.125756]  __device_attach_driver+0x98/0x130
+[   12.125760]  bus_for_each_drv+0x78/0xd0
+[   12.125765]  __device_attach+0x9c/0x1c0
+[   12.125769]  device_initial_probe+0x14/0x20
+[   12.125772]  bus_probe_device+0x9c/0xa4
+[   12.125778]  deferred_probe_work_func+0xb8/0x110
+[   12.125781]  process_one_work+0x1a4/0x300
+[   12.125789]  worker_thread+0x6c/0x40c
+[   12.125793]  kthread+0xe4/0xf0
+[   12.125797]  ret_from_fork+0x10/0x20
+[   12.125804] ---[ end trace 0000000000000000 ]---
+[   12.136638] spi_hid spi0.0: Invalid input report sync constant (0x0)
+[   12.136642] spi_hid spi0.0: failed to validate header: -22
+[   12.136643] spi_hid: header buffer: 00 00 00 00
+[   12.148227] spi_hid spi0.0: spi_hid_ll_open: d3 -> d0
+[   12.150186] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[   12.150189] Bluetooth: BNEP filters: protocol multicast
+[   12.150194] Bluetooth: BNEP socket layer initialized
+[   12.159245] spi_hid spi0.0: spi_hid_ll_close: d0 -> d3
+[   12.204300] remoteproc remoteproc0: Booting fw image qcom/msft/surface/pro-x-sq2/qcmpss8180.mbn, size 75470832
+[   12.205199] spi_hid spi0.0: Invalid input report sync constant (0x0)
+[   12.205202] spi_hid spi0.0: failed to validate header: -22
+[   12.205204] spi_hid: header buffer: 00 00 00 00
+[   12.217214] spi_hid spi0.0: spi_hid_ll_open: d3 -> d0
+[   12.228209] spi_hid spi0.0: spi_hid_ll_close: d0 -> d3
+[   12.239339] Console: switching to colour frame buffer device 360x120
+[   12.256233] spi_hid spi0.0: Invalid input report sync constant (0xff)
+[   12.256237] spi_hid spi0.0: failed to validate header: -22
+[   12.256238] spi_hid: header buffer: ff ff ff ff
+[   12.268120] spi_hid spi0.0: spi_hid_ll_open: d3 -> d0
+[   12.278320] msm_dpu ae01000.mdp: [drm] fb0: msmdrmfb frame buffer device
+[   12.286319] spi_hid spi0.0: spi_hid_ll_close: d0 -> d3
+[   12.297719] input: Microsoft Surface 045E:09AE Keyboard as /devices/platform/soc@0/cc0000.geniqup/c94000.serial/serial1/serial1-0/00:00:01:0e:00/01:15:02:01:00/0019:045E:09AE.0004/input/input12
+[   12.297847] hid-generic 0019:045E:09AE.0004: input,hidraw3: <UNKNOWN> HID v1.11 Keyboard [Microsoft Surface 045E:09AE] on 01:15:02:01:00
+[   12.302185] hid-generic 0019:045E:0991.0005: hidraw4: <UNKNOWN> HID v1.11 Device [Microsoft Surface 045E:0991] on 01:15:02:05:00
+[   12.306402] input: Microsoft Surface 045E:09B0 Keyboard as /devices/platform/soc@0/cc0000.geniqup/c94000.serial/serial1/serial1-0/00:00:01:0e:00/01:15:02:02:00/0019:045E:09B0.0006/input/input13
+[   12.306447] input: Microsoft Surface 045E:09B0 as /devices/platform/soc@0/cc0000.geniqup/c94000.serial/serial1/serial1-0/00:00:01:0e:00/01:15:02:02:00/0019:045E:09B0.0006/input/input14
+[   12.306478] input: Microsoft Surface 045E:09B0 as /devices/platform/soc@0/cc0000.geniqup/c94000.serial/serial1/serial1-0/00:00:01:0e:00/01:15:02:02:00/0019:045E:09B0.0006/input/input15
+[   12.306514] hid-generic 0019:045E:09B0.0006: input,hidraw5: <UNKNOWN> HID v1.11 Keyboard [Microsoft Surface 045E:09B0] on 01:15:02:02:00
+[   12.314503] input: Microsoft Surface 045E:09AF Mouse as /devices/platform/soc@0/cc0000.geniqup/c94000.serial/serial1/serial1-0/00:00:01:0e:00/01:15:02:03:00/0019:045E:09AF.0007/input/input16
+[   12.326049] input: Microsoft Surface 045E:09AF Touchpad as /devices/platform/soc@0/cc0000.geniqup/c94000.serial/serial1/serial1-0/00:00:01:0e:00/01:15:02:03:00/0019:045E:09AF.0007/input/input17
+[   12.331756] input: Microsoft Surface 045E:09AF as /devices/platform/soc@0/cc0000.geniqup/c94000.serial/serial1/serial1-0/00:00:01:0e:00/01:15:02:03:00/0019:045E:09AF.0007/input/input18
+[   12.332153] input: Microsoft Surface 045E:09AF as /devices/platform/soc@0/cc0000.geniqup/c94000.serial/serial1/serial1-0/00:00:01:0e:00/01:15:02:03:00/0019:045E:09AF.0007/input/input19
+[   12.332752] hid-generic 0019:045E:09AF.0007: input,hidraw6: <UNKNOWN> HID v1.11 Mouse [Microsoft Surface 045E:09AF] on 01:15:02:03:00
+[   12.471145] input: Microsoft Surface 045E:09AF Mouse as /devices/platform/soc@0/cc0000.geniqup/c94000.serial/serial1/serial1-0/00:00:01:0e:00/01:15:02:03:00/0019:045E:09AF.0007/input/input20
+[   12.471507] input: Microsoft Surface 045E:09AF Touchpad as /devices/platform/soc@0/cc0000.geniqup/c94000.serial/serial1/serial1-0/00:00:01:0e:00/01:15:02:03:00/0019:045E:09AF.0007/input/input21
+[   12.471878] input: Microsoft Surface 045E:09AF UNKNOWN as /devices/platform/soc@0/cc0000.geniqup/c94000.serial/serial1/serial1-0/00:00:01:0e:00/01:15:02:03:00/0019:045E:09AF.0007/input/input22
+[   12.472031] input: Microsoft Surface 045E:09AF UNKNOWN as /devices/platform/soc@0/cc0000.geniqup/c94000.serial/serial1/serial1-0/00:00:01:0e:00/01:15:02:03:00/0019:045E:09AF.0007/input/input23
+[   12.473067] hid-multitouch 0019:045E:09AF.0007: input,hidraw6: <UNKNOWN> HID v1.11 Mouse [Microsoft Surface 045E:09AF] on 01:15:02:03:00
+[   12.675674] remoteproc remoteproc0: remote processor 4080000.remoteproc is now up
+[   12.699722] r8152 6-1.2:1.0 eth0: carrier on
+[   12.700324] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[   13.042116] Bluetooth: hci0: QCA Downloading qca/crnv01.bin
+[   13.226700] Bluetooth: hci0: QCA setup on UART is completed
+[   13.539658] ath10k_snoc 18800000.wifi: qmi chip_id 0x30224 chip_family 0x4001 board_id 0xff soc_id 0x40060000
+[   13.539669] ath10k_snoc 18800000.wifi: qmi fw_version 0x32010120 fw_build_timestamp 2022-01-02 02:43 fw_build_id QC_IMAGE_VERSION_STRING=WLAN.HL.3.2.0.c8-00288-QCAHLSWSC8180XMTPLZ-1
+[   15.871287] spi_hid spi0.0: Invalid input report sync constant (0x0)
+[   15.871292] spi_hid spi0.0: failed to validate header: -22
+[   15.871293] spi_hid: header buffer: 00 00 00 00
+[   15.883117] spi_hid spi0.0: spi_hid_ll_open: d3 -> d0
+[   16.627780] ath10k_snoc 18800000.wifi: wcn3990 hw1.0 target 0x00000008 chip_id 0x00000000 sub 0000:0000
+[   16.627784] ath10k_snoc 18800000.wifi: kconfig debug 0 debugfs 1 tracing 0 dfs 0 testmode 0
+[   16.627785] ath10k_snoc 18800000.wifi: firmware ver  api 5 features wowlan,mgmt-tx-by-reference,non-bmi,single-chan-info-per-channel crc32 de480ba3
+[   16.673948] ath10k_snoc 18800000.wifi: htt-ver 3.96 wmi-op 4 htt-op 3 cal file max-sta 32 raw 0 hwcrypto 1
+[   16.962701] ath10k_snoc 18800000.wifi: invalid MAC address; choosing random
+[   16.962737] ath: EEPROM regdomain: 0x0
+[   16.962738] ath: EEPROM indicates default country code should be used
+[   16.962739] ath: doing EEPROM country->regdmn map search
+[   16.962740] ath: country maps to regdmn code: 0x3a
+[   16.962741] ath: Country alpha2 being used: US
+[   16.962741] ath: Regpair used: 0x3a
+[   18.639557] rfkill: input handler disabled
+[  359.312191] spmi-temp-alarm c440000.spmi:pmic@0:temp-alarm@2400: failed to register sensor
+[ 1219.537697] PM: suspend entry (s2idle)
+[ 1219.550044] Filesystems sync: 0.012 seconds
+[ 1219.596675] Freezing user space processes ... (elapsed 0.001 seconds) done.
+[ 1219.598232] OOM killer disabled.
+[ 1219.598233] Freezing remaining freezable tasks ... (elapsed 0.000 seconds) done.
+[ 1219.599144] printk: Suspending console(s) (use no_console_suspend to debug)
+[ 1220.394127] pcieport 0002:00:00.0: pciehp: Timeout on hotplug command 0x13f1 (issued 1215790 msec ago)
+[ 1221.606246] pcieport 0002:00:00.0: pciehp: Timeout on hotplug command 0x03d1 (issued 1212 msec ago)
+[ 1221.607219] dwc3-qcom a4f8800.usb: HS-PHY not in L2
+[ 1221.607442] dwc3-qcom a8f8800.usb: HS-PHY not in L2
+[ 1221.607627] dwc3-qcom a6f8800.usb: HS-PHY not in L2
+[ 1221.614332] PM: suspend devices took 1.911 seconds
+[ 1362.015659] rcu: INFO: rcu_preempt detected stalls on CPUs/tasks:
+[ 1362.015663] rcu: 	4-...!: (0 ticks this GP) idle=648/0/0x0 softirq=8649/8649 fqs=1  (false positive?)
+[ 1362.015668] 	(detected by 6, t=10006 jiffies, g=20217, q=10 ncpus=8)
+[ 1362.015670] Task dump for CPU 4:
+[ 1362.015671] task:swapper/4       state:R  running task     stack:    0 pid:    0 ppid:     1 flags:0x00000008
+[ 1362.015675] Call trace:
+[ 1362.015675]  __switch_to+0xc4/0xf0
+[ 1362.015683]  0x1
+[ 1362.015686] rcu: rcu_preempt kthread timer wakeup didn't happen for 9997 jiffies! g20217 f0x0 RCU_GP_WAIT_FQS(5) ->state=0x402
+[ 1362.015689] rcu: 	Possible timer handling issue on cpu=4 timer-softirq=4795
+[ 1362.015690] rcu: rcu_preempt kthread starved for 10000 jiffies! g20217 f0x0 RCU_GP_WAIT_FQS(5) ->state=0x402 ->cpu=4
+[ 1362.015691] rcu: 	Unless rcu_preempt kthread gets sufficient CPU time, OOM is now expected behavior.
+[ 1362.015692] rcu: RCU grace-period kthread stack dump:
+[ 1362.015693] task:rcu_preempt     state:I stack:    0 pid:   13 ppid:     2 flags:0x00000008
+[ 1362.015695] Call trace:
+[ 1362.015695]  __switch_to+0xc4/0xf0
+[ 1362.015697]  __schedule+0x258/0x6a4
+[ 1362.015699]  schedule+0x50/0xcc
+[ 1362.015701]  schedule_timeout+0x80/0xf0
+[ 1362.015704]  rcu_gp_fqs_loop+0x11c/0x390
+[ 1362.015707]  rcu_gp_kthread+0x13c/0x1a0
+[ 1362.015708]  kthread+0xe4/0xf0
+[ 1362.015710]  ret_from_fork+0x10/0x20
+[ 1362.015712] rcu: Stack dump where RCU GP kthread last ran:
+[ 1362.015713] Task dump for CPU 4:
+[ 1362.015713] task:swapper/4       state:R  running task     stack:    0 pid:    0 ppid:     1 flags:0x00000008
+[ 1362.015715] Call trace:
+[ 1362.015715]  __switch_to+0xc4/0xf0
+[ 1362.015717]  0x1
+[ 1368.842208] rcu: INFO: rcu_preempt detected stalls on CPUs/tasks:
+[ 1368.842218] rcu: 	0-...!: (1 GPs behind) idle=1dc/0/0x0 softirq=10043/10044 fqs=0  (false positive?)
+[ 1368.842228] rcu: 	1-...!: (1 GPs behind) idle=afa/0/0x0 softirq=6364/6364 fqs=0  (false positive?)
+[ 1368.842234] rcu: 	3-...!: (1 GPs behind) idle=67c/0/0x0 softirq=6530/6531 fqs=0  (false positive?)
+[ 1368.842240] rcu: 	4-...!: (0 ticks this GP) idle=654/0/0x0 softirq=8650/8650 fqs=0  (false positive?)
+[ 1368.842246] rcu: 	5-...!: (1 GPs behind) idle=25c/0/0x0 softirq=7624/7624 fqs=0  (false positive?)
+[ 1368.842251] rcu: 	6-...!: (1 GPs behind) idle=6fe/0/0x0 softirq=15595/15596 fqs=0  (false positive?)
+[ 1368.842257] rcu: 	7-...!: (1 GPs behind) idle=e18/0/0x0 softirq=8071/8071 fqs=0  (false positive?)
+[ 1368.842264] 	(detected by 2, t=10005 jiffies, g=20221, q=10 ncpus=8)
+[ 1368.842269] Task dump for CPU 0:
+[ 1368.842271] task:swapper/0       state:R  running task     stack:    0 pid:    0 ppid:     0 flags:0x00000008
+[ 1368.842279] Call trace:
+[ 1368.842281]  __switch_to+0xc4/0xf0
+[ 1368.842292]  0x1
+[ 1368.842298] Task dump for CPU 1:
+[ 1368.842300] task:swapper/1       state:R  running task     stack:    0 pid:    0 ppid:     1 flags:0x00000008
+[ 1368.842306] Call trace:
+[ 1368.842307]  __switch_to+0xc4/0xf0
+[ 1368.842311]  0x1
+[ 1368.842314] Task dump for CPU 3:
+[ 1368.842315] task:swapper/3       state:R  running task     stack:    0 pid:    0 ppid:     1 flags:0x00000008
+[ 1368.842321] Call trace:
+[ 1368.842322]  __switch_to+0xc4/0xf0
+[ 1368.842326]  0x1
+[ 1368.842329] Task dump for CPU 4:
+[ 1368.842331] task:swapper/4       state:R  running task     stack:    0 pid:    0 ppid:     1 flags:0x00000008
+[ 1368.842337] Call trace:
+[ 1368.842338]  __switch_to+0xc4/0xf0
+[ 1368.842342]  0x1
+[ 1368.842345] Task dump for CPU 5:
+[ 1368.842347] task:swapper/5       state:R  running task     stack:    0 pid:    0 ppid:     1 flags:0x00000008
+[ 1368.842353] Call trace:
+[ 1368.842355]  __switch_to+0xc4/0xf0
+[ 1368.842359]  0x1
+[ 1368.842361] Task dump for CPU 6:
+[ 1368.842363] task:swapper/6       state:R  running task     stack:    0 pid:    0 ppid:     1 flags:0x00000008
+[ 1368.842369] Call trace:
+[ 1368.842370]  __switch_to+0xc4/0xf0
+[ 1368.842374]  0x1
+[ 1368.842377] Task dump for CPU 7:
+[ 1368.842379] task:swapper/7       state:R  running task     stack:    0 pid:    0 ppid:     1 flags:0x00000008
+[ 1368.842385] Call trace:
+[ 1368.842386]  __switch_to+0xc4/0xf0
+[ 1368.842390]  0x1
+[ 1368.842394] rcu: rcu_preempt kthread timer wakeup didn't happen for 10002 jiffies! g20221 f0x0 RCU_GP_WAIT_FQS(5) ->state=0x402
+[ 1368.842399] rcu: 	Possible timer handling issue on cpu=4 timer-softirq=4796
+[ 1368.842402] rcu: rcu_preempt kthread starved for 10005 jiffies! g20221 f0x0 RCU_GP_WAIT_FQS(5) ->state=0x402 ->cpu=4
+[ 1368.842407] rcu: 	Unless rcu_preempt kthread gets sufficient CPU time, OOM is now expected behavior.
+[ 1368.842409] rcu: RCU grace-period kthread stack dump:
+[ 1368.842410] task:rcu_preempt     state:I stack:    0 pid:   13 ppid:     2 flags:0x00000008
+[ 1368.842415] Call trace:
+[ 1368.842416]  __switch_to+0xc4/0xf0
+[ 1368.842420]  __schedule+0x258/0x6a4
+[ 1368.842425]  schedule+0x50/0xcc
+[ 1368.842428]  schedule_timeout+0x80/0xf0
+[ 1368.842434]  rcu_gp_fqs_loop+0x11c/0x390
+[ 1368.842440]  rcu_gp_kthread+0x13c/0x1a0
+[ 1368.842445]  kthread+0xe4/0xf0
+[ 1368.842450]  ret_from_fork+0x10/0x20
+[ 1368.842455] rcu: Stack dump where RCU GP kthread last ran:
+[ 1368.842457] Task dump for CPU 4:
+[ 1368.842458] task:swapper/4       state:R  running task     stack:    0 pid:    0 ppid:     1 flags:0x00000008
+[ 1368.842464] Call trace:
+[ 1368.842465]  __switch_to+0xc4/0xf0
+[ 1368.842469]  0x1
+[ 1387.416497] rcu: INFO: rcu_preempt detected stalls on CPUs/tasks:
+[ 1387.416500] rcu: 	5-...!: (0 ticks this GP) idle=27c/0/0x0 softirq=7625/7625 fqs=1  (false positive?)
+[ 1387.416503] 	(detected by 6, t=40010 jiffies, g=20221, q=16 ncpus=8)
+[ 1387.416505] Task dump for CPU 5:
+[ 1387.416506] task:swapper/5       state:R  running task     stack:    0 pid:    0 ppid:     1 flags:0x00000008
+[ 1387.416509] Call trace:
+[ 1387.416509]  __switch_to+0xc4/0xf0
+[ 1387.416512]  0x1
+[ 1387.416514] rcu: rcu_preempt kthread timer wakeup didn't happen for 30002 jiffies! g20221 f0x0 RCU_GP_WAIT_FQS(5) ->state=0x402
+[ 1387.416516] rcu: 	Possible timer handling issue on cpu=4 timer-softirq=4797
+[ 1387.416517] rcu: rcu_preempt kthread starved for 30005 jiffies! g20221 f0x0 RCU_GP_WAIT_FQS(5) ->state=0x402 ->cpu=4
+[ 1387.416518] rcu: 	Unless rcu_preempt kthread gets sufficient CPU time, OOM is now expected behavior.
+[ 1387.416519] rcu: RCU grace-period kthread stack dump:
+[ 1387.416520] task:rcu_preempt     state:I stack:    0 pid:   13 ppid:     2 flags:0x00000008
+[ 1387.416521] Call trace:
+[ 1387.416522]  __switch_to+0xc4/0xf0
+[ 1387.416524]  __schedule+0x258/0x6a4
+[ 1387.416525]  schedule+0x50/0xcc
+[ 1387.416526]  schedule_timeout+0x80/0xf0
+[ 1387.416529]  rcu_gp_fqs_loop+0x11c/0x390
+[ 1387.416530]  rcu_gp_kthread+0x13c/0x1a0
+[ 1387.416532]  kthread+0xe4/0xf0
+[ 1387.416533]  ret_from_fork+0x10/0x20
+[ 1387.416535] rcu: Stack dump where RCU GP kthread last ran:
+[ 1387.416535] Task dump for CPU 4:
+[ 1387.416536] task:swapper/4       state:R  running task     stack:    0 pid:    0 ppid:     1 flags:0x00000008
+[ 1387.416537] Call trace:
+[ 1387.416538]  __switch_to+0xc4/0xf0
+[ 1387.416540]  0x1
+[ 1460.244074] nvme 0002:01:00.0: Unable to change power state from D3hot to D0, device inaccessible
+[ 1460.382482] xhci-hcd xhci-hcd.2.auto: xHC error in resume, USBSTS 0x411, Reinit
+[ 1460.382496] usb usb5: root hub lost power or was reset
+[ 1460.382500] usb usb6: root hub lost power or was reset
+[ 1460.652399] usb 5-1: reset high-speed USB device number 2 using xhci-hcd
+[ 1461.109621] usb 6-1: reset SuperSpeed USB device number 2 using xhci-hcd
+[ 1461.336381] usb 5-1.4: reset full-speed USB device number 5 using xhci-hcd
+[ 1461.425400] pcieport 0002:00:00.0: pciehp: Timeout on hotplug command 0x03d1 (issued 1181 msec ago)
+[ 1461.496260] usb 5-1.3: reset full-speed USB device number 4 using xhci-hcd
+[ 1461.642375] usb 5-1.1: reset high-speed USB device number 3 using xhci-hcd
+[ 1461.804268] usb 6-1.2: reset SuperSpeed USB device number 4 using xhci-hcd
+[ 1461.876967] r8152 6-1.2:1.0: skip request firmware
+[ 1461.888981] usb 6-1.1: reset SuperSpeed USB device number 3 using xhci-hcd
+[ 1462.639388] pcieport 0002:00:00.0: pciehp: Timeout on hotplug command 0x1020 (issued 1214 msec ago)
+[ 1462.639413] pcieport 0002:00:00.0: pciehp: Slot(0): Card not present
+[ 1462.639467] nvme0n1: detected capacity change from 500118192 to 0
+[ 1462.639630] BTRFS error (device nvme0n1p6): bdev /dev/nvme0n1p6 errs: wr 1, rd 0, flush 0, corrupt 0, gen 0
+[ 1462.639707] BTRFS error (device nvme0n1p6): bdev /dev/nvme0n1p6 errs: wr 2, rd 0, flush 0, corrupt 0, gen 0
+[ 1462.639721] BTRFS error (device nvme0n1p6): bdev /dev/nvme0n1p6 errs: wr 3, rd 0, flush 0, corrupt 0, gen 0
+[ 1462.639751] BTRFS error (device nvme0n1p6): bdev /dev/nvme0n1p6 errs: wr 4, rd 0, flush 0, corrupt 0, gen 0
+[ 1462.640069] BTRFS error (device nvme0n1p6): bdev /dev/nvme0n1p6 errs: wr 5, rd 0, flush 0, corrupt 0, gen 0
+[ 1462.640078] BTRFS error (device nvme0n1p6): bdev /dev/nvme0n1p6 errs: wr 6, rd 0, flush 0, corrupt 0, gen 0
+[ 1462.640253] BTRFS error (device nvme0n1p6): bdev /dev/nvme0n1p6 errs: wr 7, rd 0, flush 0, corrupt 0, gen 0
+[ 1462.640262] BTRFS error (device nvme0n1p6): bdev /dev/nvme0n1p6 errs: wr 8, rd 0, flush 0, corrupt 0, gen 0
+[ 1462.640292] BTRFS: error (device nvme0n1p6) in btrfs_commit_transaction:2404: errno=-5 IO failure (Error while writing out transaction)
+[ 1462.640299] BTRFS info (device nvme0n1p6: state E): forced readonly
+[ 1462.640304] BTRFS warning (device nvme0n1p6: state E): Skipping commit of aborted transaction.
+[ 1462.640308] BTRFS: error (device nvme0n1p6: state EA) in cleanup_transaction:1968: errno=-5 IO failure
+[ 1462.643013] pci 0002:01:00.0: Removing from iommu group 3
+[ 1462.646797] PM: resume devices took 2.340 seconds
+[ 1462.654597] pcieport 0002:00:00.0: pciehp: Timeout on hotplug command 0x1020 (issued 1230 msec ago)
+[ 1462.749609] OOM killer enabled.
+[ 1462.749611] Restarting tasks ...
+[ 1462.750379] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Journal file corrupted, rotating.
+[ 1462.750395] systemd-journald[342]: Failed to write entry to /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal (9 items, 275 bytes), rotating before retrying: Bad message
+[ 1462.750435] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Read-only file system
+[ 1462.750456] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/user-1000.journal: Read-only file system
+[ 1462.750506] systemd-journald[342]: Failed to enumerate /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.750591] systemd-journald[342]: Failed to vacuum /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.750659] systemd-journald[342]: Failed to write entry to /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal (9 items, 275 bytes) despite vacuuming, ignoring: Bad message
+[ 1462.752988] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: IO error, rotating.
+[ 1462.752999] systemd-journald[342]: Failed to write entry to /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal (9 items, 232 bytes), rotating before retrying: Input/output error
+[ 1462.753029] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Read-only file system
+[ 1462.753050] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/user-1000.journal: Read-only file system
+[ 1462.753086] systemd-journald[342]: Failed to enumerate /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.753162] systemd-journald[342]: Failed to vacuum /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.753198] systemd-journald[342]: Failed to write entry to /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal (9 items, 232 bytes) despite vacuuming, ignoring: Input/output error
+[ 1462.753256] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal uses an outdated header, suggesting rotation.
+[ 1462.753264] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Journal header limits reached or header out-of-date, rotating.
+[ 1462.753287] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Read-only file system
+[ 1462.753306] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/user-1000.journal: Read-only file system
+[ 1462.753339] systemd-journald[342]: Failed to enumerate /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.753414] systemd-journald[342]: Failed to vacuum /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.753448] systemd-journald[342]: Failed to write entry (9 items, 280 bytes), ignoring: Input/output error
+[ 1462.753500] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal uses an outdated header, suggesting rotation.
+[ 1462.753508] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Journal header limits reached or header out-of-date, rotating.
+[ 1462.753530] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Read-only file system
+[ 1462.753550] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/user-1000.journal: Read-only file system
+[ 1462.753583] systemd-journald[342]: Failed to enumerate /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.753680] systemd-journald[342]: Failed to vacuum /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.753716] systemd-journald[342]: Failed to write entry (9 items, 275 bytes), ignoring: Input/output error
+[ 1462.754287] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal uses an outdated header, suggesting rotation.
+[ 1462.754295] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Journal header limits reached or header out-of-date, rotating.
+[ 1462.754320] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Read-only file system
+[ 1462.754343] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/user-1000.journal: Read-only file system
+[ 1462.754381] systemd-journald[342]: Failed to enumerate /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.754455] systemd-journald[342]: Failed to vacuum /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.754489] systemd-journald[342]: Failed to write entry (12 items, 381 bytes), ignoring: Input/output error
+[ 1462.755026] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal uses an outdated header, suggesting rotation.
+[ 1462.755036] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Journal header limits reached or header out-of-date, rotating.
+[ 1462.755063] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Read-only file system
+[ 1462.755083] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/user-1000.journal: Read-only file system
+[ 1462.755119] systemd-journald[342]: Failed to enumerate /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.755193] systemd-journald[342]: Failed to vacuum /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.755233] systemd-journald[342]: Failed to write entry (12 items, 378 bytes), ignoring: Input/output error
+[ 1462.755734] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal uses an outdated header, suggesting rotation.
+[ 1462.755743] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Journal header limits reached or header out-of-date, rotating.
+[ 1462.755767] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Read-only file system
+[ 1462.755787] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/user-1000.journal: Read-only file system
+[ 1462.755823] systemd-journald[342]: Failed to enumerate /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.755897] systemd-journald[342]: Failed to vacuum /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.755932] systemd-journald[342]: Failed to write entry (12 items, 338 bytes), ignoring: Input/output error
+[ 1462.756409] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal uses an outdated header, suggesting rotation.
+[ 1462.756417] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Journal header limits reached or header out-of-date, rotating.
+[ 1462.756441] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Read-only file system
+[ 1462.756461] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/user-1000.journal: Read-only file system
+[ 1462.756496] systemd-journald[342]: Failed to enumerate /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.756570] systemd-journald[342]: Failed to vacuum /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.756693] systemd-journald[342]: Failed to write entry (12 items, 338 bytes), ignoring: Input/output error
+[ 1462.757159] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal uses an outdated header, suggesting rotation.
+[ 1462.757167] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Journal header limits reached or header out-of-date, rotating.
+[ 1462.757190] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Read-only file system
+[ 1462.757210] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/user-1000.journal: Read-only file system
+[ 1462.757250] systemd-journald[342]: Failed to enumerate /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.757327] systemd-journald[342]: Failed to vacuum /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.757362] systemd-journald[342]: Failed to write entry (12 items, 338 bytes), ignoring: Input/output error
+[ 1462.757415] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal uses an outdated header, suggesting rotation.
+[ 1462.757423] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Journal header limits reached or header out-of-date, rotating.
+[ 1462.757446] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Read-only file system
+[ 1462.757466] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/user-1000.journal: Read-only file system
+[ 1462.757499] systemd-journald[342]: Failed to enumerate /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.757572] systemd-journald[342]: Failed to vacuum /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.757627] systemd-journald[342]: Failed to write entry (9 items, 250 bytes), ignoring: Input/output error
+[ 1462.757684] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal uses an outdated header, suggesting rotation.
+[ 1462.757692] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Journal header limits reached or header out-of-date, rotating.
+[ 1462.757715] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Read-only file system
+[ 1462.757735] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/user-1000.journal: Read-only file system
+[ 1462.757769] systemd-journald[342]: Failed to enumerate /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.757843] systemd-journald[342]: Failed to vacuum /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.757876] systemd-journald[342]: Failed to write entry (9 items, 265 bytes), ignoring: Input/output error
+[ 1462.757930] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal uses an outdated header, suggesting rotation.
+[ 1462.757938] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Journal header limits reached or header out-of-date, rotating.
+[ 1462.757965] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Read-only file system
+[ 1462.757985] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/user-1000.journal: Read-only file system
+[ 1462.758020] systemd-journald[342]: Failed to enumerate /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.758093] systemd-journald[342]: Failed to vacuum /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.758127] systemd-journald[342]: Failed to write entry (9 items, 301 bytes), ignoring: Input/output error
+[ 1462.758181] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal uses an outdated header, suggesting rotation.
+[ 1462.758188] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Journal header limits reached or header out-of-date, rotating.
+[ 1462.758211] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Read-only file system
+[ 1462.758231] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/user-1000.journal: Read-only file system
+[ 1462.758263] systemd-journald[342]: Failed to enumerate /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.758342] systemd-journald[342]: Failed to vacuum /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.758381] systemd-journald[342]: Failed to write entry (9 items, 268 bytes), ignoring: Input/output error
+[ 1462.758437] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal uses an outdated header, suggesting rotation.
+[ 1462.758445] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Journal header limits reached or header out-of-date, rotating.
+[ 1462.758468] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Read-only file system
+[ 1462.758489] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/user-1000.journal: Read-only file system
+[ 1462.758524] systemd-journald[342]: Failed to enumerate /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.758609] systemd-journald[342]: Failed to vacuum /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.758649] systemd-journald[342]: Failed to write entry (9 items, 232 bytes), ignoring: Input/output error
+[ 1462.758704] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal uses an outdated header, suggesting rotation.
+[ 1462.758712] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Journal header limits reached or header out-of-date, rotating.
+[ 1462.758735] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Read-only file system
+[ 1462.758755] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/user-1000.journal: Read-only file system
+[ 1462.758793] systemd-journald[342]: Failed to enumerate /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.758981] systemd-journald[342]: Failed to vacuum /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.759016] systemd-journald[342]: Failed to write entry (9 items, 309 bytes), ignoring: Input/output error
+[ 1462.759069] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal uses an outdated header, suggesting rotation.
+[ 1462.759076] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Journal header limits reached or header out-of-date, rotating.
+[ 1462.759099] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Read-only file system
+[ 1462.759116] done.
+[ 1462.759119] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/user-1000.journal: Read-only file system
+[ 1462.759123] random: crng reseeded on system resumption
+[ 1462.759152] systemd-journald[342]: Failed to enumerate /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.759225] systemd-journald[342]: Failed to vacuum /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.759257] systemd-journald[342]: Failed to write entry (9 items, 223 bytes), ignoring: Input/output error
+[ 1462.759313] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal uses an outdated header, suggesting rotation.
+[ 1462.759321] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Journal header limits reached or header out-of-date, rotating.
+[ 1462.759344] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Read-only file system
+[ 1462.759364] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/user-1000.journal: Read-only file system
+[ 1462.759398] systemd-journald[342]: Failed to enumerate /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.759472] systemd-journald[342]: Failed to vacuum /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.759492] PM: suspend exit
+[ 1462.759505] systemd-journald[342]: Failed to write entry (9 items, 234 bytes), ignoring: Input/output error
+[ 1462.759558] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal uses an outdated header, suggesting rotation.
+[ 1462.759566] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Journal header limits reached or header out-of-date, rotating.
+[ 1462.759588] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Read-only file system
+[ 1462.759628] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/user-1000.journal: Read-only file system
+[ 1462.759663] systemd-journald[342]: Failed to enumerate /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.759740] systemd-journald[342]: Failed to vacuum /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.759778] systemd-journald[342]: Failed to write entry (9 items, 216 bytes), ignoring: Input/output error
+[ 1462.759833] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal uses an outdated header, suggesting rotation.
+[ 1462.759840] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Journal header limits reached or header out-of-date, rotating.
+[ 1462.759863] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Read-only file system
+[ 1462.759883] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/user-1000.journal: Read-only file system
+[ 1462.759917] systemd-journald[342]: Failed to enumerate /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.759996] systemd-journald[342]: Failed to vacuum /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.760038] systemd-journald[342]: Failed to write entry (9 items, 326 bytes), ignoring: Input/output error
+[ 1462.760095] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal uses an outdated header, suggesting rotation.
+[ 1462.760103] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Journal header limits reached or header out-of-date, rotating.
+[ 1462.760130] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Read-only file system
+[ 1462.760151] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/user-1000.journal: Read-only file system
+[ 1462.760189] systemd-journald[342]: Failed to enumerate /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.760265] systemd-journald[342]: Failed to vacuum /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.760299] systemd-journald[342]: Failed to write entry (9 items, 275 bytes), ignoring: Input/output error
+[ 1462.760359] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal uses an outdated header, suggesting rotation.
+[ 1462.760367] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Journal header limits reached or header out-of-date, rotating.
+[ 1462.760391] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Read-only file system
+[ 1462.760414] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/user-1000.journal: Read-only file system
+[ 1462.760449] systemd-journald[342]: Failed to enumerate /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.760529] systemd-journald[342]: Failed to vacuum /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.760565] systemd-journald[342]: Failed to write entry (9 items, 316 bytes), ignoring: Input/output error
+[ 1462.760835] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal uses an outdated header, suggesting rotation.
+[ 1462.760843] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Journal header limits reached or header out-of-date, rotating.
+[ 1462.760868] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Read-only file system
+[ 1462.760888] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/user-1000.journal: Read-only file system
+[ 1462.760922] systemd-journald[342]: Failed to enumerate /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.761001] systemd-journald[342]: Failed to vacuum /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.761036] systemd-journald[342]: Failed to write entry (9 items, 300 bytes), ignoring: Input/output error
+[ 1462.761093] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal uses an outdated header, suggesting rotation.
+[ 1462.761101] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Journal header limits reached or header out-of-date, rotating.
+[ 1462.761125] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Read-only file system
+[ 1462.761145] systemd-journald[342]: Failed to rotate /var/log/journal/d02f100a16e943889931b2e68af4a8e7/user-1000.journal: Read-only file system
+[ 1462.761184] systemd-journald[342]: Failed to enumerate /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.761259] systemd-journald[342]: Failed to vacuum /var/log/journal/d02f100a16e943889931b2e68af4a8e7, ignoring: Input/output error
+[ 1462.761293] systemd-journald[342]: Failed to write entry (9 items, 253 bytes), ignoring: Input/output error
+[ 1462.761351] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal uses an outdated header, suggesting rotation.
+[ 1462.761362] systemd-journald[342]: /var/log/journal/d02f100a16e943889931b2e68af4a8e7/system.journal: Journal header limits reached or header out-of-date, rotating.
+[ 1462.764262] BTRFS error (device nvme0n1p6: state EA): bdev /dev/nvme0n1p6 errs: wr 8, rd 1, flush 0, corrupt 0, gen 0
+[ 1462.764399] Core dump to |/usr/lib/systemd/systemd-coredump pipe failed
+[ 1462.767442] systemd[1]: systemd-journald.service: Main process exited, code=killed, status=6/ABRT
+[ 1462.767723] systemd[1]: systemd-journald.service: Failed with result 'watchdog'.
+[ 1462.770466] systemd[1]: systemd-suspend.service: Deactivated successfully.
+[ 1462.771026] systemd[1]: Finished System Suspend.
+[ 1462.772307] systemd[1]: systemd-journald.service: Scheduled restart job, restart counter is at 1.
+[ 1462.773433] systemd[1]: Stopped target Sleep.
+[ 1462.773778] systemd[1]: Reached target Suspend.
+[ 1462.774164] systemd[1]: Stopped Journal Service.
+[ 1462.780707] systemd[1]: Starting Journal Service...
+[ 1462.784882] systemd[1]: Stopped target Suspend.
+[ 1462.804013] systemd[1]: Stopped target Local File Systems.
+[ 1462.806274] BTRFS error (device nvme0n1p6: state EA): bdev /dev/nvme0n1p6 errs: wr 8, rd 2, flush 0, corrupt 0, gen 0
+[ 1462.806384] systemd[1149]: efi.mount: Failed to execute /usr/bin/umount: Input/output error
+[ 1462.806401] systemd[1]: Unmounting /efi...
+[ 1462.808334] systemd[1]: efi.mount: Mount process exited, code=exited, status=203/EXEC
+[ 1462.808361] systemd[1]: Failed unmounting /efi.
+[ 1462.813540] systemd[1]: systemd-fsck@dev-disk-by\x2duuid-8C20\x2d127C.service: Deactivated successfully.
+[ 1462.814070] systemd[1]: Stopped File System Check on /dev/disk/by-uuid/8C20-127C.
+[ 1462.981656] systemd[1]: Started Journal Service.
+[ 1463.870291] pcieport 0002:00:00.0: pciehp: Timeout on hotplug command 0x0400 (issued 1215 msec ago)
+[ 1464.936594] pcieport 0002:00:00.0: pciehp: Timeout on hotplug command 0x0400 (issued 2282 msec ago)
+[ 1465.506674] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[ 1465.507039] r8152 6-1.2:1.0 eth0: carrier on
+[ 1470.465286] BTRFS error (device nvme0n1p6: state EA): bdev /dev/nvme0n1p6 errs: wr 8, rd 3, flush 0, corrupt 0, gen 0
+[ 1470.485857] BTRFS error (device nvme0n1p6: state EA): bdev /dev/nvme0n1p6 errs: wr 8, rd 4, flush 0, corrupt 0, gen 0
+[ 1470.486015] BTRFS error (device nvme0n1p6: state EA): bdev /dev/nvme0n1p6 errs: wr 8, rd 5, flush 0, corrupt 0, gen 0
+[ 1470.486396] BTRFS error (device nvme0n1p6: state EA): bdev /dev/nvme0n1p6 errs: wr 8, rd 6, flush 0, corrupt 0, gen 0
+[ 1470.486554] BTRFS error (device nvme0n1p6: state EA): bdev /dev/nvme0n1p6 errs: wr 8, rd 7, flush 0, corrupt 0, gen 0
